@@ -1,0 +1,22 @@
+{
+  "owner": "tenancy",
+  "tables": {
+    "organizations": "id, name, status, version",
+    "memberships": "id, org_id, subject_id, role, depot_id?, status, version",
+    "audit_entries": "id, org_id, actor_id, action, target_id, occurred_at"
+  },
+  "relations": [
+    [
+      "organizations",
+      "memberships",
+      "1 : many org_id"
+    ],
+    [
+      "organizations",
+      "audit_entries",
+      "1 : many org_id"
+    ]
+  ],
+  "width": 1320,
+  "height": 790
+}

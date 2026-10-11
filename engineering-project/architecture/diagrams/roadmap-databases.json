@@ -1,0 +1,62 @@
+{
+  "title": "Databases roadmap",
+  "kind": "Roadmap",
+  "width": 1250,
+  "height": 700,
+  "nodes": [
+    [
+      "M03",
+      "M03 • Модель/migration",
+      "Catalog & pricing|Proof in assignment",
+      40,
+      125,
+      350,
+      95
+    ],
+    [
+      "M04",
+      "M04 • Locks & plans",
+      "Inventory integrity|Proof in assignment",
+      440,
+      125,
+      350,
+      95
+    ],
+    [
+      "M10",
+      "M10 • Ledger invariants",
+      "Settlement & refunds|Proof in assignment",
+      840,
+      125,
+      350,
+      95
+    ],
+    [
+      "M17",
+      "M17 • Restore verification",
+      "IaC, backup & restore|Proof in assignment",
+      40,
+      365,
+      350,
+      95
+    ]
+  ],
+  "edges": [
+    [
+      "M03",
+      "M04",
+      "next checkpoint"
+    ],
+    [
+      "M04",
+      "M10",
+      "next checkpoint"
+    ],
+    [
+      "M10",
+      "M17",
+      "next checkpoint"
+    ]
+  ],
+  "groups": []
+}

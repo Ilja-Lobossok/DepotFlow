@@ -1,0 +1,5077 @@
+{
+  "kind": "assignment-pack-validation; not business acceptance",
+  "checks": [
+    {
+      "test": "seven independent owners",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "story registry",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "nfr registry",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "18milestones",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "15roadmaps",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "43rendered diagrams",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "22screen map",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F01",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F02",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F03",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F04",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F05",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F06",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F07",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F08",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F09",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F10",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F11",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F12",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F13",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F14",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F15",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F16",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F17",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F18",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F19",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage F20",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage N01",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage N02",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage N03",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage N04",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage N05",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage N06",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage N07",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage N08",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage N09",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage N10",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage N11",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage N12",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage A01",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage A02",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage A03",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage A04",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage A05",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage A06",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage A07",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage A08",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage A09",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage A10",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "coverage A11",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "openapi tenancy",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "asyncapi tenancy",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema tenancy/membership.changed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "openapi catalog",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "asyncapi catalog",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema catalog/catalog.changed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema catalog/catalog.changed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "openapi inventory",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "asyncapi inventory",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema inventory/hold.created",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema inventory/hold.rejected",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema inventory/hold.expired",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema inventory/allocation.committed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema inventory/allocation.released",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema inventory/asset.unavailable",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema inventory/booking.reserve-requested",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema inventory/booking.commit-requested",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema inventory/booking.release-requested",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema inventory/fulfillment.returned",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema inventory/fulfillment.handed-over",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "openapi booking",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "asyncapi booking",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/booking.reserve-requested",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/booking.commit-requested",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/booking.release-requested",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/booking.confirmed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/booking.cancelled",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/billing.authorize-requested",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/billing.void-requested",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/billing.settle-requested",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/hold.created",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/hold.rejected",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/hold.expired",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/allocation.committed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/allocation.released",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/payment.authorized",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/payment.failed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/payment.voided",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/payment.captured",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/payment.refunded",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/fulfillment.handed-over",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/fulfillment.returned",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema booking/asset.unavailable",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "openapi billing",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "asyncapi billing",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema billing/payment.authorized",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema billing/payment.failed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema billing/payment.voided",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema billing/payment.captured",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema billing/payment.refunded",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema billing/billing.authorize-requested",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema billing/billing.void-requested",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema billing/billing.settle-requested",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "openapi fulfillment",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "asyncapi fulfillment",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema fulfillment/fulfillment.handed-over",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema fulfillment/fulfillment.returned",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema fulfillment/booking.confirmed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema fulfillment/booking.cancelled",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema fulfillment/asset.unavailable",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "openapi notification",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "asyncapi notification",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema notification/booking.confirmed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema notification/booking.cancelled",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema notification/fulfillment.returned",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "event schema notification/payment.refunded",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for catalog.changed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for booking.reserve-requested",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for booking.commit-requested",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for booking.release-requested",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for fulfillment.returned",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for fulfillment.handed-over",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for hold.created",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for hold.rejected",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for hold.expired",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for allocation.committed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for allocation.released",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for payment.authorized",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for payment.failed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for payment.voided",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for payment.captured",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for payment.refunded",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for fulfillment.handed-over",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for fulfillment.returned",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for asset.unavailable",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for billing.authorize-requested",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for billing.void-requested",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for billing.settle-requested",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for booking.confirmed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for booking.cancelled",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for asset.unavailable",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for booking.confirmed",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for booking.cancelled",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for fulfillment.returned",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "producer for payment.refunded",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source context",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source containers",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source component-inventory",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source component-booking",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source component-billing",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source sequence-checkout",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source sequence-cancel",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source sequence-handover-return",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source event-flow",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source er-tenancy",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source er-catalog",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source er-inventory",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source er-booking",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source er-billing",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source er-fulfillment",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source er-notification",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source deployment-local",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source deployment-test",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source deployment-production-like",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source network",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source ci-cd",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source observability",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source security",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source failure-recovery",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source failure-restore",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source booking-state",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source customer-flow",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source warehouse-flow",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source roadmap-backend-engineering",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source roadmap-frontend-engineering",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source roadmap-databases",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source roadmap-distributed-systems",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source roadmap-redis-caching",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source roadmap-message-brokers",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source roadmap-linux-networking",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source roadmap-docker-kubernetes",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source roadmap-ci-cd-iac",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source roadmap-cloud",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source roadmap-observability",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source roadmap-security",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source roadmap-testing-performance-reliability",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source roadmap-system-design",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "SVG/source roadmap-project",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "assignment sections M01",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "valid dependency M01",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "assignment sections M02",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "valid dependency M02",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "assignment sections M03",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "valid dependency M03",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "assignment sections M04",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "valid dependency M04",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "assignment sections M05",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "valid dependency M05",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "assignment sections M06",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "valid dependency M06",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "assignment sections M07",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "valid dependency M07",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "assignment sections M08",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "valid dependency M08",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "assignment sections M09",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "valid dependency M09",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "assignment sections M10",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "valid dependency M10",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "assignment sections M11",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "valid dependency M11",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "assignment sections M12",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "valid dependency M12",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "assignment sections M13",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "valid dependency M13",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "assignment sections M14",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "valid dependency M14",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "assignment sections M15",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "valid dependency M15",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "assignment sections M16",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "valid dependency M16",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "assignment sections M17",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "valid dependency M17",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "assignment sections M18",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "valid dependency M18",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "acyclic milestone DAG",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement login",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement catalog",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement availability",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement quote",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement checkout",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement pending",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement booking",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement cancel",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement notifications",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement warehouse",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement handover",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement return",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement fleet",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement maintenance",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement billing",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement refund",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement team",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement rate",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement audit",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement operations",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement denied",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "screen requirement contracts",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/adrs/ADR-001.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/adrs/ADR-002.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/adrs/ADR-003.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/adrs/ADR-004.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/adrs/ADR-005.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/adrs/ADR-006.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/adrs/ADR-007.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/adrs/ADR-008.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/adrs/ADR-009.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/adrs/ADR-010.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/booking-state.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/booking-state.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/ci-cd.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/ci-cd.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/component-billing.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/component-billing.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/component-booking.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/component-booking.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/component-inventory.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/component-inventory.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/containers.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/containers.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/context.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/context.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/customer-flow.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/customer-flow.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/deployment-local.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/deployment-local.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/deployment-production-like.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/deployment-production-like.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/deployment-test.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/deployment-test.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/er-billing.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/er-billing.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/er-booking.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/er-booking.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/er-catalog.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/er-catalog.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/er-fulfillment.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/er-fulfillment.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/er-inventory.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/er-inventory.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/er-notification.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/er-notification.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/er-tenancy.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/er-tenancy.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/event-flow.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/event-flow.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/failure-recovery.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/failure-recovery.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/failure-restore.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/failure-restore.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/index.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/network.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/network.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/observability.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/observability.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-backend-engineering.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-backend-engineering.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-ci-cd-iac.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-ci-cd-iac.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-cloud.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-cloud.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-databases.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-databases.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-distributed-systems.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-distributed-systems.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-docker-kubernetes.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-docker-kubernetes.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-frontend-engineering.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-frontend-engineering.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-linux-networking.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-linux-networking.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-message-brokers.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-message-brokers.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-observability.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-observability.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-project.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-project.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-redis-caching.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-redis-caching.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-security.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-security.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-system-design.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-system-design.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-testing-performance-reliability.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/roadmap-testing-performance-reliability.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/security.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/security.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/sequence-cancel.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/sequence-cancel.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/sequence-checkout.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/sequence-checkout.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/sequence-handover-return.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/sequence-handover-return.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/warehouse-flow.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/diagrams/warehouse-flow.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/services/billing.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/services/booking.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/services/catalog.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/services/fulfillment.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/services/inventory.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/services/notification.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/services/tenancy.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/services.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/system-design.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → architecture/technology-decisions.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/backlog.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/labs/L01-kafka.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/labs/L02-grpc.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/labs/L03-jenkins.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/M01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/M02.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/M03.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/M04.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/M05.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/M06.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/M07.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/M08.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/M09.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/M10.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/M11.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/M12.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/M13.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/M15.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/M16.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/M17.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → assignments/milestones.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → atlas/app.js",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → atlas/content.js",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → atlas/content.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → atlas/diagrams.js",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → atlas/diagrams.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → atlas/index.html",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → atlas/style.css",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/asyncapi/billing.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/asyncapi/booking.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/asyncapi/catalog.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/asyncapi/fulfillment.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/asyncapi/inventory.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/asyncapi/notification.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/asyncapi/tenancy.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/event-catalog.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/allocation.committed.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/allocation.released.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/asset.unavailable.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/billing.authorize-requested.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/billing.settle-requested.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/billing.void-requested.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/booking.cancelled.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/booking.commit-requested.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/booking.confirmed.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/booking.release-requested.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/booking.reserve-requested.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/catalog.changed.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/fulfillment.handed-over.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/fulfillment.returned.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/hold.created.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/hold.expired.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/hold.rejected.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/membership.changed.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/payment.authorized.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/payment.captured.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/payment.failed.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/payment.refunded.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/examples/payment.voided.v1.example.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/messaging-topology.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/openapi/billing.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/openapi/booking.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/openapi/catalog.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/openapi/fulfillment.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/openapi/inventory.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/openapi/notification.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/openapi/tenancy.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → contracts/README.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/allocation.committed.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/allocation.released.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/asset.unavailable.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/billing.authorize-requested.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/billing.settle-requested.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/billing.void-requested.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/booking.cancelled.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/booking.commit-requested.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/booking.confirmed.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/booking.release-requested.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/booking.reserve-requested.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/catalog.changed.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/fulfillment.handed-over.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/fulfillment.returned.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/hold.created.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/hold.expired.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/hold.rejected.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/membership.changed.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/payment.authorized.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/payment.captured.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/payment.failed.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/payment.refunded.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/events/payment.voided.v1.schema.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/fixtures.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/models/billing.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/models/booking.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/models/catalog.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/models/fulfillment.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/models/inventory.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/models/notification.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → data/models/tenancy.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → design/design-spec.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → design/prototype.css",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → design/prototype.html",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → design/prototype.js",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → design/screens.js",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → design/screens.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → exports/handbook.html",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → exports/manifest.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/backup-recovery.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/engineering-process.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/environments.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/fundamentals.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/network-security.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/release-rollback.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/requirements-evolution.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/runbooks/asset-overrun.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/runbooks/broker-outage.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/runbooks/credential-rotation.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/runbooks/dlq-replay.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/runbooks/payment-unknown.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/runbooks/slow-api.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/runbooks/stuck-saga.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/templates/adr-template.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/templates/contract-review.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/templates/incident-report.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/templates/issue-bug.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/templates/issue-story.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/templates/pull_request.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/templates/review-record.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → operations/tutor-checkpoints.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/business-processes.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/PRD.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F02.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F03.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F04.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F05.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F06.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F07.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F08.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F09.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F10.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F11.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F12.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F13.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F15.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F16.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F17.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F19.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → product/stories/F20.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → README.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → requirements/functional.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → requirements/nonfunctional.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → research/market-study.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → research/original-brief.txt",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → research/sources.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/brief-coverage.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/coverage.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/evidence/atlas-architecture-desktop.jpg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/evidence/atlas-desktop.jpg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/evidence/atlas-mobile.jpg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/evidence/browser-qa.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/evidence/contract-validation.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/evidence/pack-validation.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/evidence/prototype-billing-desktop.jpg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/evidence/prototype-booking-desktop.jpg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/evidence/prototype-catalog-mobile.jpg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/evidence/prototype-return-desktop.jpg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/evidence/prototype-return-mobile.jpg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/pack-quality.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/phase-register.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/requirements-coverage.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/reviewer-guide.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/scenarios.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → reviews/test-strategy.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → roadmaps/backend-engineering.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → roadmaps/ci-cd-iac.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → roadmaps/cloud.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → roadmaps/databases.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → roadmaps/distributed-systems.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → roadmaps/docker-kubernetes.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → roadmaps/frontend-engineering.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → roadmaps/linux-networking.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → roadmaps/message-brokers.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → roadmaps/observability.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → roadmaps/project.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → roadmaps/redis-caching.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → roadmaps/security.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → roadmaps/system-design.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → roadmaps/technologies.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → roadmaps/testing-performance-reliability.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → roadmaps/tracks.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → tools/build_content.py",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → tools/build_contracts.py",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → tools/build_pack.py",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → tools/build_visuals.py",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → tools/package_release.py",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → tools/refine_ui.py",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → tools/supplement_content.py",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → tools/validate-contracts.cjs",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → tools/validators/package-lock.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → tools/validators/package.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link PROJECT_INDEX.md → tools/verify_pack.py",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link README.md → atlas/index.html",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link README.md → design/prototype.html",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link README.md → PROJECT_INDEX.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link README.md → reviews/requirements-coverage.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link README.md → exports/handbook.html",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M02.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F02.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M03.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F03.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M04.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F04.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M03.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F05.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M05.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F06.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M07.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F07.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M05.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F08.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M08.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F09.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M09.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F10.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M09.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F11.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M10.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F12.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M10.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F13.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M04.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M11.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F15.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M12.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F16.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M04.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F17.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M13.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F19.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M16.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F20.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M17.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M08.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M02.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M12.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M15.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M16.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M11.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M17.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M15.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../README.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/M01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../research/market-study.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../research/sources.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../architecture/system-design.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../architecture/services.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/PRD.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/business-processes.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../product/stories/F01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../architecture/diagrams/index.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../contracts/README.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../architecture/technology-decisions.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../operations/fundamentals.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../assignments/milestones.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../reviews/reviewer-guide.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../design/prototype.html",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../design/design-spec.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../design/screens.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../atlas/index.html",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../roadmaps/tracks.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../operations/engineering-process.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../operations/templates/pull_request.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../PROJECT_INDEX.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../tools/build_pack.py",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../exports/handbook.html",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../reviews/pack-quality.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../reviews/coverage.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../reviews/phase-register.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../operations/fundamentals.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link reviews/requirements-coverage.md → ../operations/engineering-process.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/backend-engineering.md → ../assignments/M01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/backend-engineering.md → ../assignments/M03.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/backend-engineering.md → ../assignments/M05.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/backend-engineering.md → ../assignments/M07.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/ci-cd-iac.md → ../assignments/M01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/ci-cd-iac.md → ../assignments/M13.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/ci-cd-iac.md → ../assignments/M16.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/ci-cd-iac.md → ../assignments/M17.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/cloud.md → ../assignments/M01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/cloud.md → ../assignments/M15.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/cloud.md → ../assignments/M17.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/cloud.md → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/databases.md → ../assignments/M03.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/databases.md → ../assignments/M04.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/databases.md → ../assignments/M10.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/databases.md → ../assignments/M17.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/distributed-systems.md → ../assignments/M05.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/distributed-systems.md → ../assignments/M06.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/distributed-systems.md → ../assignments/M08.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/distributed-systems.md → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/docker-kubernetes.md → ../assignments/M01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/docker-kubernetes.md → ../assignments/M13.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/docker-kubernetes.md → ../assignments/M15.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/docker-kubernetes.md → ../assignments/M16.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/frontend-engineering.md → ../assignments/M02.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/frontend-engineering.md → ../assignments/M05.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/frontend-engineering.md → ../assignments/M09.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/frontend-engineering.md → ../assignments/M11.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/linux-networking.md → ../assignments/M01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/linux-networking.md → ../assignments/M02.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/linux-networking.md → ../assignments/M12.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/linux-networking.md → ../assignments/M15.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/message-brokers.md → ../assignments/M05.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/message-brokers.md → ../assignments/M06.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/message-brokers.md → ../assignments/M08.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/message-brokers.md → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/observability.md → ../assignments/M05.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/observability.md → ../assignments/M06.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/observability.md → ../assignments/M12.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/observability.md → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/project.md → ../assignments/M01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/project.md → ../assignments/M04.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/project.md → ../assignments/M08.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/project.md → ../assignments/M11.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/project.md → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/project.md → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/redis-caching.md → ../assignments/M03.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/redis-caching.md → ../assignments/M11.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/redis-caching.md → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/redis-caching.md → ../assignments/M15.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/security.md → ../assignments/M02.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/security.md → ../assignments/M10.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/security.md → ../assignments/M13.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/security.md → ../assignments/M15.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/system-design.md → ../assignments/M01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/system-design.md → ../assignments/M04.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/system-design.md → ../assignments/M08.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/system-design.md → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/testing-performance-reliability.md → ../assignments/M03.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/testing-performance-reliability.md → ../assignments/M06.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/testing-performance-reliability.md → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link roadmaps/testing-performance-reliability.md → ../assignments/M17.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link architecture/services/billing.md → ../../contracts/openapi/billing.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link architecture/services/billing.md → ../../contracts/asyncapi/billing.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link architecture/services/booking.md → ../../contracts/openapi/booking.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link architecture/services/booking.md → ../../contracts/asyncapi/booking.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link architecture/services/catalog.md → ../../contracts/openapi/catalog.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link architecture/services/catalog.md → ../../contracts/asyncapi/catalog.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link architecture/services/fulfillment.md → ../../contracts/openapi/fulfillment.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link architecture/services/fulfillment.md → ../../contracts/asyncapi/fulfillment.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link architecture/services/inventory.md → ../../contracts/openapi/inventory.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link architecture/services/inventory.md → ../../contracts/asyncapi/inventory.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link architecture/services/notification.md → ../../contracts/openapi/notification.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link architecture/services/notification.md → ../../contracts/asyncapi/notification.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link architecture/services/tenancy.md → ../../contracts/openapi/tenancy.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "MD link architecture/services/tenancy.md → ../../contracts/asyncapi/tenancy.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset atlas/index.html → style.css",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset atlas/index.html → content.js",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset atlas/index.html → diagrams.js",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset atlas/index.html → app.js",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset design/prototype.html → prototype.css",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset design/prototype.html → ../atlas/index.html#design",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset design/prototype.html → screens.js",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset design/prototype.html → prototype.js",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../contracts/openapi/tenancy.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../contracts/asyncapi/tenancy.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../contracts/openapi/catalog.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../contracts/asyncapi/catalog.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../contracts/openapi/inventory.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../contracts/asyncapi/inventory.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../contracts/openapi/booking.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../contracts/asyncapi/booking.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../contracts/openapi/billing.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../contracts/asyncapi/billing.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../contracts/openapi/fulfillment.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../contracts/asyncapi/fulfillment.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../contracts/openapi/notification.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../contracts/asyncapi/notification.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M04.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M08.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M11.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M03.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M05.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M07.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M02.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M05.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M09.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M11.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M03.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M04.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M10.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M17.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M05.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M06.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M08.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M03.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M11.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M15.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M05.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M06.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M08.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M02.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M12.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M15.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M13.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M15.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M16.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M13.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M16.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M17.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M15.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M17.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M05.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M06.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M12.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M02.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M10.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M13.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M15.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M03.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M06.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M17.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M04.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M08.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../atlas/index.html",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../design/prototype.html",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../PROJECT_INDEX.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../reviews/requirements-coverage.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../exports/handbook.html",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M02.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F02.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M03.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F03.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M04.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F04.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M03.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F05.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M05.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F06.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M07.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F07.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M05.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F08.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M08.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F09.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M09.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F10.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M09.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F11.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M10.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F12.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M10.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F13.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M04.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M11.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F15.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M12.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F16.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M04.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F17.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M13.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F19.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M16.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F20.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M17.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M08.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M02.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M12.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M14.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M15.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M16.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M11.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M17.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M15.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M18.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../README.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/M01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../research/market-study.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../research/sources.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/system-design.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/services.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/PRD.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/business-processes.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../product/stories/F01.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/index.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../contracts/README.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/technology-decisions.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../operations/fundamentals.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../assignments/milestones.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../reviews/reviewer-guide.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../design/prototype.html",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../design/design-spec.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../design/screens.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../atlas/index.html",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../roadmaps/tracks.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../operations/engineering-process.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../operations/templates/pull_request.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../reviews/engineering-audit.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../requirements/nonfunctional.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../PROJECT_INDEX.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../tools/build_pack.py",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../exports/handbook.html",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../reviews/pack-quality.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../reviews/coverage.json",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../reviews/phase-register.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../operations/fundamentals.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../operations/engineering-process.md",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/context.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/containers.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/component-inventory.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/component-booking.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/component-billing.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/sequence-checkout.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/sequence-cancel.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/sequence-handover-return.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/event-flow.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/er-tenancy.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/er-catalog.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/er-inventory.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/er-booking.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/er-billing.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/er-fulfillment.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/er-notification.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/deployment-local.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/deployment-test.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/deployment-production-like.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/network.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/ci-cd.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/observability.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/security.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/failure-recovery.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/failure-restore.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/booking-state.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/customer-flow.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/warehouse-flow.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/roadmap-backend-engineering.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/roadmap-frontend-engineering.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/roadmap-databases.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/roadmap-distributed-systems.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/roadmap-redis-caching.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/roadmap-message-brokers.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/roadmap-linux-networking.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/roadmap-docker-kubernetes.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/roadmap-ci-cd-iac.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/roadmap-cloud.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/roadmap-observability.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/roadmap-security.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/roadmap-testing-performance-reliability.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/roadmap-system-design.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "HTML asset exports/handbook.html → ../architecture/diagrams/roadmap-project.svg",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "offline doc index matches sources",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "formal contract report passes",
+      "status": "pass",
+      "detail": ""
+    },
+    {
+      "test": "browser report available",
+      "status": "pass",
+      "detail": ""
+    }
+  ],
+  "passed": true,
+  "errors": []
+}

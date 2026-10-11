@@ -1,0 +1,375 @@
+[
+  {
+    "id": "F01",
+    "title": "Доступ организации",
+    "role": "org_admin",
+    "goal": "Разделить данные компаний",
+    "prerequisites": "OIDC session; active organization",
+    "main": "Пригласить участника; назначить одну роль и при необходимости depot",
+    "alternative": "Отозвать membership; следующий command запрещён",
+    "errors": "Чужой org или depot -> 404/403",
+    "acceptance": "Given A/B; When member A GET booking B; Then 404 и тело без PII. Revocation запрещает команды сразу после authoritative check, чтения ≤60 s.",
+    "milestone": "M02",
+    "screens": [
+      "login",
+      "team"
+    ],
+    "depends": []
+  },
+  {
+    "id": "F02",
+    "title": "Каталог и тариф",
+    "role": "org_admin",
+    "goal": "Управлять арендным предложением",
+    "prerequisites": "F01; модель принадлежит tenant",
+    "main": "Создать model и rate в EUR minor units; заменить rate новым version",
+    "alternative": "Deactivate model скрывает новые quotes, не ломает существующие",
+    "errors": "Нулевая/отрицательная стоимость или inactive model -> 422",
+    "acceptance": "Given rate 2500; When rate changes to 3000 after quote; Then existing quote uses 2500 until expiry.",
+    "milestone": "M03",
+    "screens": [
+      "catalog",
+      "rate"
+    ],
+    "depends": [
+      "F01"
+    ]
+  },
+  {
+    "id": "F03",
+    "title": "Поиск доступности",
+    "role": "customer",
+    "goal": "Найти модель на срок",
+    "prerequisites": "F02; depot active",
+    "main": "Выбрать depot, start/end, quantity; фильтр категории, cursor pagination",
+    "alternative": "Нет единиц -> empty state; Redis down -> SQL",
+    "errors": "start>=end, quantity вне 1..5 ->422",
+    "acceptance": "When 26 models with page limit 25; Then second cursor returns last item without duplicate. Availability never guarantees allocation.",
+    "milestone": "M04",
+    "screens": [
+      "catalog",
+      "availability"
+    ],
+    "depends": [
+      "F02"
+    ]
+  },
+  {
+    "id": "F04",
+    "title": "Котировка",
+    "role": "customer",
+    "goal": "Получить неизменяемую цену",
+    "prerequisites": "F03; период 1h..30d, начало ≥ now+1h",
+    "main": "Quote expires after 15 min; days=ceil(duration/24h); quantity multiplied",
+    "alternative": "Quote expired -> refresh with explicit consent if amount changes",
+    "errors": "Вход содержит decimal money or negative duration ->422",
+    "acceptance": "Given 25 h, qty2, rate2500, deposit10000 per unit; Then days2, rental10000, deposit20000, total authorization30000.",
+    "milestone": "M03",
+    "screens": [
+      "quote",
+      "checkout"
+    ],
+    "depends": [
+      "F03"
+    ]
+  },
+  {
+    "id": "F05",
+    "title": "Временный резерв",
+    "role": "customer",
+    "goal": "Не продать один asset дважды",
+    "prerequisites": "F04; valid quote",
+    "main": "Booking pending -> reserve command; Inventory holds exact assets 10 min",
+    "alternative": "Недостаточно units -> rejected; no partial holds",
+    "errors": "100 concurrent commands contend -> one wins for qty1/one asset",
+    "acceptance": "Given one asset; When 100 unique bookings overlap; Then exactly 1 hold, 99 rejections, zero overlapping active allocations.",
+    "milestone": "M05",
+    "screens": [
+      "checkout",
+      "pending"
+    ],
+    "depends": [
+      "F04"
+    ]
+  },
+  {
+    "id": "F06",
+    "title": "Подтверждение аренды",
+    "role": "customer",
+    "goal": "Получить договор после авторизации",
+    "prerequisites": "F05; PSP sandbox",
+    "main": "HoldCreated -> authorize; Authorized -> commit; Committed -> confirmed",
+    "alternative": "Transient faults leave pending/reconciling; customer sees status",
+    "errors": "Expiry before commit -> release and void; never confirm expired hold",
+    "acceptance": "Given authorization succeeds and allocation commits; Then one confirmed booking, one active allocation, one authorization; 10 duplicate events change none of these counts.",
+    "milestone": "M07",
+    "screens": [
+      "pending",
+      "booking"
+    ],
+    "depends": [
+      "F05"
+    ]
+  },
+  {
+    "id": "F07",
+    "title": "Идемпотентность команд",
+    "role": "customer",
+    "goal": "Безопасно повторить потерянный ответ",
+    "prerequisites": "F01; Idempotency-Key",
+    "main": "Store request hash and durable response per org+subject+route+key 24h",
+    "alternative": "Same hash returns same resource/status; processing ->202",
+    "errors": "Same key different body ->409 idempotency_mismatch",
+    "acceptance": "When retry 20 times after response loss; Then one booking and one operation; tenant B may reuse same key independently.",
+    "milestone": "M05",
+    "screens": [
+      "checkout"
+    ],
+    "depends": [
+      "F01"
+    ]
+  },
+  {
+    "id": "F08",
+    "title": "Отмена до выдачи",
+    "role": "customer",
+    "goal": "Освободить резерв и деньги",
+    "prerequisites": "F06; pending or confirmed, not handed over",
+    "main": "Record cancellation intent under booking lock; saga releases allocation and voids authorization",
+    "alternative": "Late authorized event triggers void even after cancellation",
+    "errors": "Handover claimed or handed_over ->409 cannot_cancel",
+    "acceptance": "When cancel races allocation commit; Then terminal cancelled eventually has no active allocation and net captured0; timeout alone is not cancelled completion.",
+    "milestone": "M08",
+    "screens": [
+      "cancel",
+      "booking"
+    ],
+    "depends": [
+      "F06"
+    ]
+  },
+  {
+    "id": "F09",
+    "title": "Складская выдача",
+    "role": "operator",
+    "goal": "Передать конкретные assets клиенту",
+    "prerequisites": "F06; same depot; now in pickup window start-1h..end",
+    "main": "Claim handover atomically in Booking then Fulfillment records act",
+    "alternative": "Lost response: query claim, resume same job, never release automatically",
+    "errors": "Missing allocation, revoked operator, cancellation won ->409/403",
+    "acceptance": "When cancel and handover claim race; Then exactly one wins. Double handover returns original act; different payload ->409.",
+    "milestone": "M09",
+    "screens": [
+      "warehouse",
+      "handover"
+    ],
+    "depends": [
+      "F06"
+    ]
+  },
+  {
+    "id": "F10",
+    "title": "Возврат и inspection",
+    "role": "operator",
+    "goal": "Сохранить состояние оборудования",
+    "prerequisites": "F09; active job",
+    "main": "Record return once; condition good/damaged; Inventory releases or quarantines; Booking starts settlement",
+    "alternative": "Offline dependencies -> queued event; partial returns excluded core",
+    "errors": "Damage above deposit -> manual_review, no automatic extra debit",
+    "acceptance": "When return event delivered 10 times; Then one report, one release, one settlement; damaged asset not bookable until repair.",
+    "milestone": "M09",
+    "screens": [
+      "return",
+      "booking"
+    ],
+    "depends": [
+      "F09"
+    ]
+  },
+  {
+    "id": "F11",
+    "title": "Завершение оплаты",
+    "role": "customer",
+    "goal": "Списать аренду и вернуть остаток",
+    "prerequisites": "F10; valid authorization",
+    "main": "Capture rental+late+damage within authorized bound; remainder void; ledger persists",
+    "alternative": "Provider unknown -> reconciling and operator alert",
+    "errors": "Overdeposit total -> manual_review; never overcapture",
+    "acceptance": "Given authorized15000, rental5000, late2500, damage1000; Then capture8500 and void remaining6500, captured-refunded=8500.",
+    "milestone": "M10",
+    "screens": [
+      "billing",
+      "booking"
+    ],
+    "depends": [
+      "F10"
+    ]
+  },
+  {
+    "id": "F12",
+    "title": "Возврат списанных средств",
+    "role": "finance",
+    "goal": "Исправить ошибочное списание",
+    "prerequisites": "F11; finance role; captured>refunded",
+    "main": "Reason mandatory; idempotent refund ≤ remaining captured; webhook verifies result",
+    "alternative": "Timeout queries PSP before retry",
+    "errors": "Customer role ->403; refund over remainder ->422",
+    "acceptance": "When two concurrent full refunds; Then total refunded ≤ captured and one succeeds; second conflicts.",
+    "milestone": "M10",
+    "screens": [
+      "billing",
+      "refund"
+    ],
+    "depends": [
+      "F11"
+    ]
+  },
+  {
+    "id": "F13",
+    "title": "Ремонт",
+    "role": "operator",
+    "goal": "Блокировать неисправный экземпляр",
+    "prerequisites": "F01; assigned depot",
+    "main": "Create maintenance allocation for non-rented asset; complete repair explicitly",
+    "alternative": "Future reservations conflict -> reject and show affected booking IDs for dispatcher",
+    "errors": "Already handed_over ->409; cannot delete existing bookings",
+    "acceptance": "When maintenance period overlaps a committed booking; Then409 and no maintenance insert; after successful repair new hold is permitted.",
+    "milestone": "M04",
+    "screens": [
+      "fleet",
+      "maintenance"
+    ],
+    "depends": [
+      "F01"
+    ]
+  },
+  {
+    "id": "F14",
+    "title": "Уведомления и realtime",
+    "role": "customer",
+    "goal": "Увидеть изменения без повторного checkout",
+    "prerequisites": "F06; Notification running",
+    "main": "Durable notification, SSE with cursor, email sink retry",
+    "alternative": "SSE disconnected -> reconnect then HTTP snapshot; email fail does not fail booking",
+    "errors": "Cross-tenant SSE cursor ->404; unknown cursor -> fresh snapshot",
+    "acceptance": "Given confirmed event duplicated; Then one UI notification; SSE reconnect recovers latest state; email failure leaves confirmed.",
+    "milestone": "M11",
+    "screens": [
+      "notifications",
+      "booking"
+    ],
+    "depends": [
+      "F06"
+    ]
+  },
+  {
+    "id": "F15",
+    "title": "История и audit",
+    "role": "org_admin",
+    "goal": "Объяснить изменения процесса",
+    "prerequisites": "F01; commands/events exist",
+    "main": "Timeline with source event and correlation; auth decisions audit separately",
+    "alternative": "Read projection lag displayed with updated_at",
+    "errors": "Secrets, tokens, full email never written to telemetry",
+    "acceptance": "When investigate failed booking; Then actor, before/after state, correlation and saga phase are recoverable; timeline rows unique by source event.",
+    "milestone": "M12",
+    "screens": [
+      "booking",
+      "audit"
+    ],
+    "depends": [
+      "F01"
+    ]
+  },
+  {
+    "id": "F16",
+    "title": "Обновление конкурирующих форм",
+    "role": "operator",
+    "goal": "Не потерять изменения коллеги",
+    "prerequisites": "F13; resource version",
+    "main": "If-Match version on modifications; 412 with refetch action",
+    "alternative": "User reloads and explicitly repeats action",
+    "errors": "Missing If-Match ->428; stale ->412",
+    "acceptance": "When two forms edit same asset at v3; Then first creates v4, second412 and cannot overwrite.",
+    "milestone": "M04",
+    "screens": [
+      "fleet",
+      "maintenance"
+    ],
+    "depends": [
+      "F13"
+    ]
+  },
+  {
+    "id": "F17",
+    "title": "Контракты и эволюция",
+    "role": "engineer",
+    "goal": "Поставлять сервисы независимо",
+    "prerequisites": "M06; v1 consumers",
+    "main": "Add optional field; provider and old consumer contract suite run",
+    "alternative": "Breaking meaning -> v2 route/event, overlap deployments",
+    "errors": "Required field removal or enum narrowing -> CI failure",
+    "acceptance": "Given old consumer fixture; When optional field added; Then both deserialize; breaking fixture rejected before release.",
+    "milestone": "M13",
+    "screens": [
+      "contracts"
+    ],
+    "depends": [
+      "M06"
+    ]
+  },
+  {
+    "id": "F18",
+    "title": "Восстановление после сбоя",
+    "role": "operator",
+    "goal": "Довести зависшие операции до результата",
+    "prerequisites": "M08; broker and PSP faults injectable",
+    "main": "Inspect saga and inbox/outbox; controlled DLQ replay retains event ID",
+    "alternative": "Poison payload quarantined with original metadata",
+    "errors": "Blindly mark success or new charge -> forbidden",
+    "acceptance": "Given crash after DB commit before ACK; When restarted and replayed; Then one business effect and no lost transition.",
+    "milestone": "M14",
+    "screens": [
+      "operations"
+    ],
+    "depends": [
+      "M08"
+    ]
+  },
+  {
+    "id": "F19",
+    "title": "Независимая поставка",
+    "role": "engineer",
+    "goal": "Менять сервис без полного релиза",
+    "prerequisites": "M13; images pinned",
+    "main": "Pipeline builds changed service + reverse contract dependents; deploy digest, smoke, rollback",
+    "alternative": "Failed readiness -> old deployment remains",
+    "errors": "Migration destructive in same release -> blocked",
+    "acceptance": "When deploy Notification only; Then six core service digests stay unchanged; rollback restores prior image without DB loss.",
+    "milestone": "M16",
+    "screens": [
+      "operations"
+    ],
+    "depends": [
+      "M13"
+    ]
+  },
+  {
+    "id": "F20",
+    "title": "Резервное копирование",
+    "role": "engineer",
+    "goal": "Восстановить данные с измеренным ущербом",
+    "prerequisites": "M15; synthetic workload",
+    "main": "Backup all owned stores and record cutover times; restore to isolated namespace; reconcile saga/provider",
+    "alternative": "Unequal backup timestamps -> report and recovery queue",
+    "errors": "Restore into active prod namespace -> forbidden",
+    "acceptance": "When restore controlled checkpoint; Then known booking counts, ledger balance and allocation invariants match checkpoint; measured RTO≤30min and snapshot RPO≤24h.",
+    "milestone": "M17",
+    "screens": [
+      "operations"
+    ],
+    "depends": [
+      "M15"
+    ]
+  }
+]

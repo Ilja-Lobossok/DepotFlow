@@ -1,0 +1,17 @@
+{
+  "owner": "notification",
+  "tables": {
+    "preferences": "id, org_id, subject_id, email_enabled, version",
+    "notifications": "id, org_id, subject_id, source_event_id, title, read_at",
+    "deliveries": "id, org_id, notification_id, channel, status, attempt, next_attempt_at"
+  },
+  "relations": [
+    [
+      "notifications",
+      "deliveries",
+      "1 : many notification_id"
+    ]
+  ],
+  "width": 1320,
+  "height": 790
+}

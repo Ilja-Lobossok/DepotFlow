@@ -1,0 +1,83 @@
+{
+  "title": "CI/CD — service-scoped delivery DAG",
+  "kind": "CI/CD",
+  "width": 1010,
+  "height": 560,
+  "nodes": [
+    [
+      "diff",
+      "Change discovery",
+      "Source + contracts + reverse deps",
+      35,
+      130
+    ],
+    [
+      "test",
+      "Tests / contracts",
+      "Unit • integration • old reader",
+      360,
+      130
+    ],
+    [
+      "image",
+      "Artifact",
+      "Image digest • SBOM • scan",
+      685,
+      130
+    ],
+    [
+      "migrate",
+      "Migration gate",
+      "Expand • compatibility proof",
+      35,
+      375
+    ],
+    [
+      "deploy",
+      "Deploy one service",
+      "Health + smoke +5min observe",
+      360,
+      375
+    ],
+    [
+      "rollback",
+      "Rollback decision",
+      "Old image; schema remains expanded",
+      685,
+      375
+    ]
+  ],
+  "edges": [
+    [
+      "diff",
+      "test",
+      "affected set"
+    ],
+    [
+      "test",
+      "image",
+      "checks pass"
+    ],
+    [
+      "image",
+      "migrate",
+      "promote digest"
+    ],
+    [
+      "migrate",
+      "deploy",
+      "job passes"
+    ],
+    [
+      "deploy",
+      "rollback",
+      "failure gate"
+    ],
+    [
+      "rollback",
+      "deploy",
+      "verify recovery"
+    ]
+  ],
+  "groups": []
+}

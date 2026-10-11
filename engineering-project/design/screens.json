@@ -1,0 +1,433 @@
+[
+  {
+    "id": "login",
+    "title": "Вход",
+    "role": "customer",
+    "requirements": [
+      "F01"
+    ],
+    "milestone": "M02",
+    "route": "prototype.html#login",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "catalog",
+    "title": "Каталог",
+    "role": "customer",
+    "requirements": [
+      "F02",
+      "F03"
+    ],
+    "milestone": "M11",
+    "route": "prototype.html#catalog",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "availability",
+    "title": "Наличие на срок",
+    "role": "customer",
+    "requirements": [
+      "F03",
+      "F05"
+    ],
+    "milestone": "M11",
+    "route": "prototype.html#availability",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "quote",
+    "title": "Котировка",
+    "role": "customer",
+    "requirements": [
+      "F04"
+    ],
+    "milestone": "M11",
+    "route": "prototype.html#quote",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "checkout",
+    "title": "Проверка аренды",
+    "role": "customer",
+    "requirements": [
+      "F04",
+      "F07"
+    ],
+    "milestone": "M11",
+    "route": "prototype.html#checkout",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "pending",
+    "title": "Подтверждение в процессе",
+    "role": "customer",
+    "requirements": [
+      "F05",
+      "F06",
+      "F18"
+    ],
+    "milestone": "M11",
+    "route": "prototype.html#pending",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "booking",
+    "title": "Аренда DF-1042",
+    "role": "customer",
+    "requirements": [
+      "F06",
+      "F08",
+      "F15"
+    ],
+    "milestone": "M11",
+    "route": "prototype.html#booking",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "cancel",
+    "title": "Отмена аренды",
+    "role": "customer",
+    "requirements": [
+      "F08"
+    ],
+    "milestone": "M11",
+    "route": "prototype.html#cancel",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "notifications",
+    "title": "Уведомления",
+    "role": "customer",
+    "requirements": [
+      "F14"
+    ],
+    "milestone": "M11",
+    "route": "prototype.html#notifications",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "warehouse",
+    "title": "Работа склада",
+    "role": "operator",
+    "requirements": [
+      "F09"
+    ],
+    "milestone": "M09",
+    "route": "prototype.html#warehouse",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "handover",
+    "title": "Выдача оборудования",
+    "role": "operator",
+    "requirements": [
+      "F09"
+    ],
+    "milestone": "M09",
+    "route": "prototype.html#handover",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "return",
+    "title": "Возврат и осмотр",
+    "role": "operator",
+    "requirements": [
+      "F10"
+    ],
+    "milestone": "M09",
+    "route": "prototype.html#return",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "fleet",
+    "title": "Парк оборудования",
+    "role": "operator",
+    "requirements": [
+      "F13",
+      "F16"
+    ],
+    "milestone": "M04",
+    "route": "prototype.html#fleet",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "maintenance",
+    "title": "Ремонт",
+    "role": "operator",
+    "requirements": [
+      "F13",
+      "F16"
+    ],
+    "milestone": "M04",
+    "route": "prototype.html#maintenance",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "billing",
+    "title": "Расчёты / ledger",
+    "role": "finance",
+    "requirements": [
+      "F11",
+      "F12"
+    ],
+    "milestone": "M10",
+    "route": "prototype.html#billing",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "refund",
+    "title": "Возврат средств",
+    "role": "finance",
+    "requirements": [
+      "F12"
+    ],
+    "milestone": "M10",
+    "route": "prototype.html#refund",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "team",
+    "title": "Команда и доступ",
+    "role": "org_admin",
+    "requirements": [
+      "F01"
+    ],
+    "milestone": "M02",
+    "route": "prototype.html#team",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "rate",
+    "title": "Тарифы моделей",
+    "role": "org_admin",
+    "requirements": [
+      "F02",
+      "F04"
+    ],
+    "milestone": "M03",
+    "route": "prototype.html#rate",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "audit",
+    "title": "Журнал действий",
+    "role": "org_admin",
+    "requirements": [
+      "F15"
+    ],
+    "milestone": "M12",
+    "route": "prototype.html#audit",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "operations",
+    "title": "Операционный incident",
+    "role": "operator",
+    "requirements": [
+      "F18",
+      "F19",
+      "F20"
+    ],
+    "milestone": "M14",
+    "route": "prototype.html#operations",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "denied",
+    "title": "Доступ запрещён",
+    "role": "customer",
+    "requirements": [
+      "F01"
+    ],
+    "milestone": "M02",
+    "route": "prototype.html#denied",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  },
+  {
+    "id": "contracts",
+    "title": "Контракты",
+    "role": "org_admin",
+    "requirements": [
+      "F17"
+    ],
+    "milestone": "M13",
+    "route": "prototype.html#contracts",
+    "states": [
+      "normal",
+      "loading",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "reconnecting"
+    ]
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "SC01",
+    "requirements": [
+      "F04"
+    ],
+    "setup": "rate2500 deposit10000 qty2 duration25h",
+    "action": "create quote",
+    "expect": "rental10000 deposit20000 auth30000"
+  },
+  {
+    "id": "SC02",
+    "requirements": [
+      "F05",
+      "N02"
+    ],
+    "setup": "one ready asset, shared interval,100 distinct keys",
+    "action": "barrier starts100 checkout commands",
+    "expect": "one active hold/allocation;99rejected;no overlap"
+  },
+  {
+    "id": "SC03",
+    "requirements": [
+      "F06",
+      "F18",
+      "N04"
+    ],
+    "setup": "authorized response delayed until after hold expiry",
+    "action": "expire then deliver Authorized twice",
+    "expect": "no confirmation;one void;allocation inactive"
+  },
+  {
+    "id": "SC04",
+    "requirements": [
+      "F08",
+      "F09"
+    ],
+    "setup": "confirmed booking same version",
+    "action": "concurrent cancel and handover claim",
+    "expect": "one winner;cancel winner no handover;claim winner cancel409"
+  },
+  {
+    "id": "SC05",
+    "requirements": [
+      "F12"
+    ],
+    "setup": "captured8500 refunded0",
+    "action": "two simultaneous refund8500",
+    "expect": "one reserved/succeeded;sum refunds<=8500"
+  },
+  {
+    "id": "SC06",
+    "requirements": [
+      "F01",
+      "N03"
+    ],
+    "setup": "tenantA token tenantB booking",
+    "action": "GET/cancel and SSE subscribe foreign",
+    "expect": "404 no PII;no mutation/event leakage"
+  },
+  {
+    "id": "SC07",
+    "requirements": [
+      "F10",
+      "F13"
+    ],
+    "setup": "return damaged with future allocation",
+    "action": "return then try future handover",
+    "expect": "quarantine/unavailable;incident;no silent allocation removal"
+  },
+  {
+    "id": "SC08",
+    "requirements": [
+      "F07"
+    ],
+    "setup": "persisted booking, response lost",
+    "action": "20 repeats same key/body;then changed body",
+    "expect": "same ID20times;409mismatch changed"
+  },
+  {
+    "id": "SC09",
+    "requirements": [
+      "F18",
+      "N04"
+    ],
+    "setup": "consumer committed business+inbox notACK",
+    "action": "kill/restart/receive again",
+    "expect": "one effect,ACK replay;no missing outbox"
+  },
+  {
+    "id": "SC10",
+    "requirements": [
+      "F20",
+      "N10"
+    ],
+    "setup": "maintenance cut manifest+snapshots",
+    "action": "isolated restore+reconcile",
+    "expect": "counts/invariants match;actualRTO/RPOreported"
+  },
+  {
+    "id": "SC11",
+    "requirements": [
+      "F03",
+      "F14",
+      "N09"
+    ],
+    "setup": "26models, keyboard only,360px",
+    "action": "filter/page checkout, pending update, return",
+    "expect": "no page overflow;focus/errors announced;cursor no duplicates"
+  },
+  {
+    "id": "SC12",
+    "requirements": [
+      "F17",
+      "F19",
+      "N08"
+    ],
+    "setup": "old consumers deployed;expand schema",
+    "action": "add optionalfield then Notification-onlyrelease/rollback",
+    "expect": "oldcompatible;six unchangeddigests;rollbackwithoutDBloss"
+  }
+]

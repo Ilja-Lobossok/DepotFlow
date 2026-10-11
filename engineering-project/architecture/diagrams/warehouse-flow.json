@@ -1,0 +1,104 @@
+{
+  "title": "Warehouse journey",
+  "kind": "User flow",
+  "width": 1240,
+  "height": 640,
+  "nodes": [
+    [
+      "0",
+      "Depot jobs",
+      "Concrete screen / state",
+      40,
+      130,
+      240,
+      90
+    ],
+    [
+      "1",
+      "Job details",
+      "Concrete screen / state",
+      335,
+      130,
+      240,
+      90
+    ],
+    [
+      "2",
+      "Handover claim",
+      "Concrete screen / state",
+      630,
+      130,
+      240,
+      90
+    ],
+    [
+      "3",
+      "Physical inspection",
+      "Concrete screen / state",
+      925,
+      130,
+      240,
+      90
+    ],
+    [
+      "4",
+      "Return",
+      "Concrete screen / state",
+      40,
+      380,
+      240,
+      90
+    ],
+    [
+      "5",
+      "Quarantine / repair",
+      "Concrete screen / state",
+      335,
+      380,
+      240,
+      90
+    ],
+    [
+      "6",
+      "Finance review",
+      "Concrete screen / state",
+      630,
+      380,
+      240,
+      90
+    ]
+  ],
+  "edges": [
+    [
+      "0",
+      "1",
+      "next"
+    ],
+    [
+      "1",
+      "2",
+      "next"
+    ],
+    [
+      "2",
+      "3",
+      "next"
+    ],
+    [
+      "3",
+      "4",
+      "next"
+    ],
+    [
+      "4",
+      "5",
+      "next"
+    ],
+    [
+      "5",
+      "6",
+      "next"
+    ]
+  ],
+  "groups": []
+}

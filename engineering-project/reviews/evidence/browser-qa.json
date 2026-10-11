@@ -1,0 +1,322 @@
+{
+  "checkedDate": "2026-10-12",
+  "timezone": "Europe/Tallinn",
+  "checks": [
+    {
+      "test": "navigation 01 Project Overview",
+      "heading": "Оборудование — одно.\nКонкурирующих запросов — сотня.",
+      "status": "pass"
+    },
+    {
+      "test": "navigation 02 Product Design",
+      "heading": "Дизайн конечного продукта",
+      "status": "pass"
+    },
+    {
+      "test": "navigation 03 Architecture Explorer",
+      "heading": "Архитектура, которую можно исследовать",
+      "status": "pass"
+    },
+    {
+      "test": "navigation 04 Service Catalog",
+      "heading": "Каталог сервисов",
+      "status": "pass"
+    },
+    {
+      "test": "navigation 05 Data & Events",
+      "heading": "Данные и события",
+      "status": "pass"
+    },
+    {
+      "test": "navigation 06 Technology Map",
+      "heading": "Карта технологий",
+      "status": "pass"
+    },
+    {
+      "test": "navigation 07 Learning Roadmap",
+      "heading": "Учебные дорожные карты",
+      "status": "pass"
+    },
+    {
+      "test": "navigation 08 Project Roadmap",
+      "heading": "Дорожная карта проекта",
+      "status": "pass"
+    },
+    {
+      "test": "navigation 09 Tasks & Acceptance",
+      "heading": "Задания и критерии приёмки",
+      "status": "pass"
+    },
+    {
+      "test": "navigation 10 Testing & Reliability",
+      "heading": "Тестирование и надёжность",
+      "status": "pass"
+    },
+    {
+      "test": "navigation 11 Infrastructure & DevOps",
+      "heading": "Infrastructure & DevOps",
+      "status": "pass"
+    },
+    {
+      "test": "navigation 12 Documentation & ADRs",
+      "heading": "Документы и архитектурные решения",
+      "status": "pass"
+    },
+    {
+      "test": "M01 local progress survives reload",
+      "status": "pass"
+    },
+    {
+      "test": "clickable architecture owner opens passport",
+      "status": "pass"
+    },
+    {
+      "test": "technology filter Messaging shows RabbitMQ and Kafka lab",
+      "status": "pass"
+    },
+    {
+      "test": "negative period validation",
+      "status": "pass"
+    },
+    {
+      "test": "25h qty2 quote summary rental100 deposit200 authorization300",
+      "status": "pass"
+    },
+    {
+      "test": "checkout→pending→explicit simulated confirmed",
+      "status": "pass"
+    },
+    {
+      "test": "warehouse claim and physical handover simulation",
+      "status": "pass"
+    },
+    {
+      "test": "return/damage simulation shows settlement pending",
+      "status": "pass"
+    },
+    {
+      "test": "UI state loading",
+      "status": "pass",
+      "observed": "ОПЕРАТОР СКЛАДА / DEMO ORG A\nВозврат и осмотр\nЗагрузка данных…"
+    },
+    {
+      "test": "UI state empty",
+      "status": "pass",
+      "observed": "ОПЕРАТОР СКЛАДА / DEMO ORG A\nВозврат и осмотр\nПока нет записей\n\nНет данных по текущим фильтрам или периоду.\n\nОчистить фильтры / обновить"
+    },
+    {
+      "test": "UI state error",
+      "status": "pass",
+      "observed": "ОПЕРАТОР СКЛАДА / DEMO ORG A\nВозврат и осмотр\ndependency_unavailable · Результат операции может быть неизвестен. Проверьте статус по прежнему operation ID. Corr"
+    },
+    {
+      "test": "UI state success",
+      "status": "pass",
+      "observed": "ОПЕРАТОР СКЛАДА / DEMO ORG A\nВозврат и осмотр\nДемонстрационное действие завершено. В реализации показывать только authoritative state.\nАкт возврата\nСостояние\nИс"
+    },
+    {
+      "test": "UI state denied",
+      "status": "pass",
+      "observed": "ОПЕРАТОР СКЛАДА / DEMO ORG A\nВозврат и осмотр\n403 · Для операции нужна роль и назначение depot. Данные чужой организации скрыты.\nВойти\nВернуться в каталог"
+    },
+    {
+      "test": "UI state reconnecting",
+      "status": "pass",
+      "observed": "ОПЕРАТОР СКЛАДА / DEMO ORG A\nВозврат и осмотр\nСоединение SSE потеряно. Показан последний snapshot; выполняется восстановление по cursor.\nАкт возврата\nСостояние\n"
+    },
+    {
+      "test": "UI state normal",
+      "status": "pass",
+      "observed": "ОПЕРАТОР СКЛАДА / DEMO ORG A\nВозврат и осмотр\nАкт возврата\nСостояние\nИсправно\nПовреждено — quarantine\nУщерб в minor units (100 = €1)\nЗаметки\nВсе экземпляры возв"
+    },
+    {
+      "test": "mobile 360px catalog and return no horizontal page overflow",
+      "status": "pass"
+    },
+    {
+      "test": "21 role-reachable screens at360px",
+      "status": "pass",
+      "screens": [
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#login",
+          "scrollWidth": 345,
+          "title": "Вход",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#catalog",
+          "scrollWidth": 345,
+          "title": "Каталог",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#availability",
+          "scrollWidth": 345,
+          "title": "Наличие на срок",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#quote",
+          "scrollWidth": 345,
+          "title": "Котировка",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#checkout",
+          "scrollWidth": 345,
+          "title": "Проверка аренды",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#pending",
+          "scrollWidth": 345,
+          "title": "Подтверждение в процессе",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#booking",
+          "scrollWidth": 345,
+          "title": "Аренда DF-1042",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#cancel",
+          "scrollWidth": 345,
+          "title": "Отмена аренды",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#notifications",
+          "scrollWidth": 345,
+          "title": "Уведомления",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#warehouse",
+          "scrollWidth": 345,
+          "title": "Работа склада",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#handover",
+          "scrollWidth": 345,
+          "title": "Выдача оборудования",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#return",
+          "scrollWidth": 345,
+          "title": "Возврат и осмотр",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#fleet",
+          "scrollWidth": 345,
+          "title": "Парк оборудования",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#maintenance",
+          "scrollWidth": 345,
+          "title": "Ремонт",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#operations",
+          "scrollWidth": 345,
+          "title": "Операционный incident",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#billing",
+          "scrollWidth": 345,
+          "title": "Расчёты / ledger",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#refund",
+          "scrollWidth": 345,
+          "title": "Возврат средств",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#team",
+          "scrollWidth": 345,
+          "title": "Команда и доступ",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#rate",
+          "scrollWidth": 345,
+          "title": "Тарифы моделей",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#audit",
+          "scrollWidth": 345,
+          "title": "Журнал действий",
+          "width": 360,
+          "status": "pass"
+        },
+        {
+          "url": "http://127.0.0.1:8765/design/prototype.html#contracts",
+          "scrollWidth": 345,
+          "title": "Контракты",
+          "width": 360,
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "test": "new atlas viewport360 overview and architecture",
+      "status": "pass"
+    },
+    {
+      "test": "diagram zoom",
+      "status": "pass",
+      "observed": "transform: translate(0px, 0px) scale(1.25);"
+    },
+    {
+      "test": "diagram drag pan",
+      "status": "pass",
+      "observed": "transform: translate(50px, 30px) scale(1);"
+    },
+    {
+      "test": "keyboard skip link keeps current route and focuses main",
+      "status": "pass"
+    }
+  ],
+  "limitations": [
+    "In-app browser URL policy blocks file protocol; direct file opening not tested; localhost test documented.",
+    "Full screen-reader audit not performed",
+    "Business runtime unimplemented by design"
+  ],
+  "screenshots": [
+    "atlas-desktop.jpg",
+    "atlas-mobile.jpg",
+    "prototype-booking-desktop.jpg",
+    "prototype-return-desktop.jpg",
+    "prototype-return-mobile.jpg",
+    "prototype-catalog-mobile.jpg",
+    "prototype-billing-desktop.jpg"
+  ]
+}

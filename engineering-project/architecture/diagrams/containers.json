@@ -1,0 +1,27 @@
+{
+  "title": "Container diagram — seven owned business boundaries",
+  "width": 2040,
+  "height": 1060,
+  "services": [
+    "tenancy",
+    "catalog",
+    "inventory",
+    "booking",
+    "billing",
+    "fulfillment",
+    "notification"
+  ],
+  "http_bus": "gateway to public endpoints; owner-to-owner GETs in sequence diagrams",
+  "amqp_bus": "commands/events, per-consumer queue and own ACL",
+  "infra": [
+    "React",
+    "Gateway",
+    "Keycloak",
+    "RabbitMQ",
+    "Redis",
+    "OTel/Grafana",
+    "SandboxPSP",
+    "Mail sink"
+  ],
+  "private_databases": "one per owner; no cross-SQL"
+}

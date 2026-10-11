@@ -1,0 +1,578 @@
+[
+  {
+    "id": "M01-T01",
+    "milestone": "M01",
+    "epic": "E01",
+    "title": "Design / contract review",
+    "details": "Build isolated lab; pin versions; seven empty service build boundaries; dependency Compose specification; no business implementation supplied",
+    "status": "unstarted"
+  },
+  {
+    "id": "M01-T02",
+    "milestone": "M01",
+    "epic": "E01",
+    "title": "Independent implementation",
+    "details": "DNS/ports explained; clean machine instructions; each image independently builds",
+    "status": "unstarted"
+  },
+  {
+    "id": "M01-T03",
+    "milestone": "M01",
+    "epic": "E01",
+    "title": "Failure and acceptance evidence",
+    "details": "Kill local lab process; distinguish socket absence from health response; One independent build per service; no shared DB role; dependency health evidence",
+    "status": "unstarted"
+  },
+  {
+    "id": "M01-T04",
+    "milestone": "M01",
+    "epic": "E01",
+    "title": "Review / skill confirmation",
+    "details": "Explain namespaces, loopback, TLS; show git diff and reproducible clean start; Lab footprint report; one nonroot image runs; documentation covers every command",
+    "status": "unstarted"
+  },
+  {
+    "id": "M02-T01",
+    "milestone": "M02",
+    "epic": "E01",
+    "title": "Design / contract review",
+    "details": "Integrate Keycloak PKCE; Tenancy memberships; owner checks on every endpoint; JWT never in localStorage",
+    "status": "unstarted"
+  },
+  {
+    "id": "M02-T02",
+    "milestone": "M02",
+    "epic": "E01",
+    "title": "Independent implementation",
+    "details": "F01/N03 role matrix against two tenants; token audience/expiry tests",
+    "status": "unstarted"
+  },
+  {
+    "id": "M02-T03",
+    "milestone": "M02",
+    "epic": "E01",
+    "title": "Failure and acceptance evidence",
+    "details": "IdP/JWKS outage and revoked membership during form submit; 401 invalid token;403 forbidden own command;404 foreign object; mutations revoke immediately",
+    "status": "unstarted"
+  },
+  {
+    "id": "M02-T04",
+    "milestone": "M02",
+    "epic": "E01",
+    "title": "Review / skill confirmation",
+    "details": "Explain issuer vs audience, authentication vs authorization; Role matrix automated; no cross-tenant cache/event leakage",
+    "status": "unstarted"
+  },
+  {
+    "id": "M03-T01",
+    "milestone": "M03",
+    "epic": "E01",
+    "title": "Design / contract review",
+    "details": "Catalog versioned rates, immutable quote, OpenAPI schema validation; integer money only",
+    "status": "unstarted"
+  },
+  {
+    "id": "M03-T02",
+    "milestone": "M03",
+    "epic": "E01",
+    "title": "Independent implementation",
+    "details": "F02/F04 with25h/qty2 example and rate change",
+    "status": "unstarted"
+  },
+  {
+    "id": "M03-T03",
+    "milestone": "M03",
+    "epic": "E01",
+    "title": "Failure and acceptance evidence",
+    "details": "Catalog DB timeout during quote; ensure no booking created; 25h quote calculates10000 rental+20000 deposit; expired quote422",
+    "status": "unstarted"
+  },
+  {
+    "id": "M03-T04",
+    "milestone": "M03",
+    "epic": "E01",
+    "title": "Review / skill confirmation",
+    "details": "Explain rate snapshot and UTC/DST rounding; All quote bounds plus tenant tests pass; independent service build",
+    "status": "unstarted"
+  },
+  {
+    "id": "M04-T01",
+    "milestone": "M04",
+    "epic": "E02",
+    "title": "Design / contract review",
+    "details": "Inventory own DB; asset/depot/maintenance models; atomic qty allocation; GiST overlap invariant; If-Match",
+    "status": "unstarted"
+  },
+  {
+    "id": "M04-T02",
+    "milestone": "M04",
+    "epic": "E02",
+    "title": "Independent implementation",
+    "details": "F03/F13/F16 queries, conflict maintenance and asset lifecycle",
+    "status": "unstarted"
+  },
+  {
+    "id": "M04-T03",
+    "milestone": "M04",
+    "epic": "E02",
+    "title": "Failure and acceptance evidence",
+    "details": "Two concurrent holds/maintenance; DB deadlock abort/retry bounded; 100 simultaneous overlapping requests on one unit produce1hold; all-or-nothing qty5",
+    "status": "unstarted"
+  },
+  {
+    "id": "M04-T04",
+    "milestone": "M04",
+    "epic": "E02",
+    "title": "Review / skill confirmation",
+    "details": "Explain isolation and exclusion; inspect real constraints and plan; No overlapping active allocations; stale edit412; migration upgrade test",
+    "status": "unstarted"
+  },
+  {
+    "id": "M05-T01",
+    "milestone": "M05",
+    "epic": "E02",
+    "title": "Design / contract review",
+    "details": "Booking persists PENDING+outbox, durable request hash; acceptance202; owner lookup endpoint",
+    "status": "unstarted"
+  },
+  {
+    "id": "M05-T02",
+    "milestone": "M05",
+    "epic": "E02",
+    "title": "Independent implementation",
+    "details": "F05/F07 same key same resource, mismatch409; clients poll pending",
+    "status": "unstarted"
+  },
+  {
+    "id": "M05-T03",
+    "milestone": "M05",
+    "epic": "E02",
+    "title": "Failure and acceptance evidence",
+    "details": "Response lost after DB commit; retry vs crash; 20 repeats create1booking; different tenant same key works",
+    "status": "unstarted"
+  },
+  {
+    "id": "M05-T04",
+    "milestone": "M05",
+    "epic": "E02",
+    "title": "Review / skill confirmation",
+    "details": "Explain 202 vs confirmed and persistence of response; Idempotency body hash and expiry/replay rules documented",
+    "status": "unstarted"
+  },
+  {
+    "id": "M06-T01",
+    "milestone": "M06",
+    "epic": "E03",
+    "title": "Design / contract review",
+    "details": "RabbitMQ exchanges/queues/ACL; confirms+mandatory, ack after DB; AsyncAPI per service; contract fixtures",
+    "status": "unstarted"
+  },
+  {
+    "id": "M06-T02",
+    "milestone": "M06",
+    "epic": "E03",
+    "title": "Independent implementation",
+    "details": "Reserve command→HoldCreated facts, delivery identifiers and version rules",
+    "status": "unstarted"
+  },
+  {
+    "id": "M06-T03",
+    "milestone": "M06",
+    "epic": "E03",
+    "title": "Failure and acceptance evidence",
+    "details": "Crash after confirm before mark, crash after commit before ACK, unroutable publish; At least10 duplicate deliveries yield one effect; poison schema→DLQ with original metadata",
+    "status": "unstarted"
+  },
+  {
+    "id": "M06-T04",
+    "milestone": "M06",
+    "epic": "E03",
+    "title": "Review / skill confirmation",
+    "details": "Explain confirms vs ack; no broker delivery equals transaction success; No lost committed outbox in induced crashes; publish/inbox metrics",
+    "status": "unstarted"
+  },
+  {
+    "id": "M07-T01",
+    "milestone": "M07",
+    "epic": "E03",
+    "title": "Design / contract review",
+    "details": "Billing sandbox adapter auth/query/void/capture/refund; Booking durable orchestration with deadlines",
+    "status": "unstarted"
+  },
+  {
+    "id": "M07-T02",
+    "milestone": "M07",
+    "epic": "E03",
+    "title": "Independent implementation",
+    "details": "F06 successful auth+commit confirms; cost snapshot used",
+    "status": "unstarted"
+  },
+  {
+    "id": "M07-T03",
+    "milestone": "M07",
+    "epic": "E03",
+    "title": "Failure and acceptance evidence",
+    "details": "PSP succeeds then response lost; broker outage while hold expires; Unknown reconciled by same key; expired hold never committed; one auth",
+    "status": "unstarted"
+  },
+  {
+    "id": "M07-T04",
+    "milestone": "M07",
+    "epic": "E03",
+    "title": "Review / skill confirmation",
+    "details": "Trace confirmation; explain compensation not DB rollback; All forward/late event fixtures pass; no real money/card data",
+    "status": "unstarted"
+  },
+  {
+    "id": "M08-T01",
+    "milestone": "M08",
+    "epic": "E03",
+    "title": "Design / contract review",
+    "details": "Cancellation tombstone, Inventory release idempotent, late auth void, deadline reconciliation worker",
+    "status": "unstarted"
+  },
+  {
+    "id": "M08-T02",
+    "milestone": "M08",
+    "epic": "E03",
+    "title": "Independent implementation",
+    "details": "F08/F18 all partial states cancel; terminal does not resurrect",
+    "status": "unstarted"
+  },
+  {
+    "id": "M08-T03",
+    "milestone": "M08",
+    "epic": "E03",
+    "title": "Failure and acceptance evidence",
+    "details": "Cancel vs commit, reserve after release, late Authorized after Failed; 100 runs each race: no cancelled active allocation/net captured; completion≤120s after recovery",
+    "status": "unstarted"
+  },
+  {
+    "id": "M08-T04",
+    "milestone": "M08",
+    "epic": "E03",
+    "title": "Review / skill confirmation",
+    "details": "Explain why timeout cannot mark cancellation complete; Race matrix and actual owner-state proofs retained",
+    "status": "unstarted"
+  },
+  {
+    "id": "M09-T01",
+    "milestone": "M09",
+    "epic": "E04",
+    "title": "Design / contract review",
+    "details": "Fulfillment own jobs, projection+authoritative handover claim, all-assets return, damage quarantine",
+    "status": "unstarted"
+  },
+  {
+    "id": "M09-T02",
+    "milestone": "M09",
+    "epic": "E04",
+    "title": "Independent implementation",
+    "details": "F09/F10 operator depot enforcement, serial inspection, overrun incident",
+    "status": "unstarted"
+  },
+  {
+    "id": "M09-T03",
+    "milestone": "M09",
+    "epic": "E04",
+    "title": "Failure and acceptance evidence",
+    "details": "Claim response lost; operator restart; return arrives before handover event; Cancel/handover exactly one winner; double return one report; absent asset not handed over",
+    "status": "unstarted"
+  },
+  {
+    "id": "M09-T04",
+    "milestone": "M09",
+    "epic": "E04",
+    "title": "Review / skill confirmation",
+    "details": "Explain why handover claim has no automatic timeout release; Physical actions audited; no silent future reservation deletion",
+    "status": "unstarted"
+  },
+  {
+    "id": "M10-T01",
+    "milestone": "M10",
+    "epic": "E04",
+    "title": "Design / contract review",
+    "details": "Capture≤auth; pending_refund reservation; immutable ledger; void remainder; manual review",
+    "status": "unstarted"
+  },
+  {
+    "id": "M10-T02",
+    "milestone": "M10",
+    "epic": "E04",
+    "title": "Independent implementation",
+    "details": "F11/F12 late fee, damage, refunds and sandbox webhook signature",
+    "status": "unstarted"
+  },
+  {
+    "id": "M10-T03",
+    "milestone": "M10",
+    "epic": "E04",
+    "title": "Failure and acceptance evidence",
+    "details": "Capture succeeded then transport timeout; refund webhook duplicates and out-of-order; 15000 auth example yields8500 capture; two full refunds never overrefund",
+    "status": "unstarted"
+  },
+  {
+    "id": "M10-T04",
+    "milestone": "M10",
+    "epic": "E04",
+    "title": "Review / skill confirmation",
+    "details": "Explain pending refund vs recorded refund and available remainder; Ledger sums and provider outcomes agree for100 scripted cases",
+    "status": "unstarted"
+  },
+  {
+    "id": "M11-T01",
+    "milestone": "M11",
+    "epic": "E05",
+    "title": "Design / contract review",
+    "details": "React typed routes/forms; server state; Notification TS own DB; Redis catalog cache; cursor SSE",
+    "status": "unstarted"
+  },
+  {
+    "id": "M11-T02",
+    "milestone": "M11",
+    "epic": "E05",
+    "title": "Independent implementation",
+    "details": "F14/N09 keyboard flows, states, filters, pagination; notifications tenant-scoped",
+    "status": "unstarted"
+  },
+  {
+    "id": "M11-T03",
+    "milestone": "M11",
+    "epic": "E05",
+    "title": "Failure and acceptance evidence",
+    "details": "Redis down, SSE lost/reconnect, mail sink timeout; 360px no page overflow; duplicate fact one notification; fresh quote bypasses cache",
+    "status": "unstarted"
+  },
+  {
+    "id": "M11-T04",
+    "milestone": "M11",
+    "epic": "E05",
+    "title": "Review / skill confirmation",
+    "details": "Explain query cache vs business authority; keyboard demo; All core screen paths and loading/empty/error/denied states tested",
+    "status": "unstarted"
+  },
+  {
+    "id": "M12-T01",
+    "milestone": "M12",
+    "epic": "E05",
+    "title": "Design / contract review",
+    "details": "OTel context over HTTP/AMQP; Prometheus histograms; Grafana dashboards; Loki logs; Tempo traces",
+    "status": "unstarted"
+  },
+  {
+    "id": "M12-T02",
+    "milestone": "M12",
+    "epic": "E05",
+    "title": "Independent implementation",
+    "details": "F15/N05 correlate delayed saga with blocked adapter and queue age",
+    "status": "unstarted"
+  },
+  {
+    "id": "M12-T03",
+    "milestone": "M12",
+    "epic": "E05",
+    "title": "Failure and acceptance evidence",
+    "details": "Poison event, slow SQL, missing context on async hop; Trace links across all saga edges; no high-cardinality booking metric label",
+    "status": "unstarted"
+  },
+  {
+    "id": "M12-T04",
+    "milestone": "M12",
+    "epic": "E05",
+    "title": "Review / skill confirmation",
+    "details": "Identify bottleneck from telemetry without reading implementation first; Reviewer diagnoses injected incident in15min with retained evidence",
+    "status": "unstarted"
+  },
+  {
+    "id": "M13-T01",
+    "milestone": "M13",
+    "epic": "E06",
+    "title": "Design / contract review",
+    "details": "Provider/consumer fixtures, breaking diff gate, expand/contract migrations, image digest/SBOM scans",
+    "status": "unstarted"
+  },
+  {
+    "id": "M13-T02",
+    "milestone": "M13",
+    "epic": "E06",
+    "title": "Independent implementation",
+    "details": "F17 backward-compatible optional field and independent build scripts",
+    "status": "unstarted"
+  },
+  {
+    "id": "M13-T03",
+    "milestone": "M13",
+    "epic": "E06",
+    "title": "Failure and acceptance evidence",
+    "details": "Shared schema change ignored by naive path filter; old consumer deployment; Old consumer passes additive schema; breaking change blocked; previous migration upgrade works",
+    "status": "unstarted"
+  },
+  {
+    "id": "M13-T04",
+    "milestone": "M13",
+    "epic": "E06",
+    "title": "Review / skill confirmation",
+    "details": "Explain enum evolution and meaning change that schema diff misses; CI executes real checks, not echo success; changed contract rebuilds impacted consumers",
+    "status": "unstarted"
+  },
+  {
+    "id": "M14-T01",
+    "milestone": "M14",
+    "epic": "E06",
+    "title": "Design / contract review",
+    "details": "Environment manifest, warmup/sample, trace/error denominators; retry/jitter/PSP breaker; DLQ replay; Kafka comparative projection",
+    "status": "unstarted"
+  },
+  {
+    "id": "M14-T02",
+    "milestone": "M14",
+    "epic": "E06",
+    "title": "Independent implementation",
+    "details": "N01/N02/N04/N06 load thresholds and functional integrity under faults",
+    "status": "unstarted"
+  },
+  {
+    "id": "M14-T03",
+    "milestone": "M14",
+    "epic": "E06",
+    "title": "Failure and acceptance evidence",
+    "details": "120s broker outage, killed consumer after commit, partition, delayed PSP, poison payload; 20VU read p95≤300ms command≤500ms saga≤5s healthy; recovery100 bookings≤120s",
+    "status": "unstarted"
+  },
+  {
+    "id": "M14-T04",
+    "milestone": "M14",
+    "epic": "E06",
+    "title": "Review / skill confirmation",
+    "details": "Explain percentile vs average, coordinated omission, recovery limits; Record failures and tuning impact; no fabricated charts/benchmark numbers",
+    "status": "unstarted"
+  },
+  {
+    "id": "M15-T01",
+    "milestone": "M15",
+    "epic": "E06",
+    "title": "Design / contract review",
+    "details": "kind/k3d seven Deployments, own DBs, resource limits/probes, network policies, TLS; secrets nonrepo",
+    "status": "unstarted"
+  },
+  {
+    "id": "M15-T02",
+    "milestone": "M15",
+    "epic": "E06",
+    "title": "Independent implementation",
+    "details": "N07 ingress only; DB denied to other owner; scale Inventory2 replicas respects invariant",
+    "status": "unstarted"
+  },
+  {
+    "id": "M15-T03",
+    "milestone": "M15",
+    "epic": "E06",
+    "title": "Failure and acceptance evidence",
+    "details": "Broker outage must not liveness-restart services; rolling update during hold; Old pods drain30s; own migration job; wrong DB role denied; rollout maintains invariants",
+    "status": "unstarted"
+  },
+  {
+    "id": "M15-T04",
+    "milestone": "M15",
+    "epic": "E06",
+    "title": "Review / skill confirmation",
+    "details": "Explain StatefulSet is not HA, PVC/backups, readiness gates; Clean local cluster deploy and security matrix pass; lab overhead recorded",
+    "status": "unstarted"
+  },
+  {
+    "id": "M16-T01",
+    "milestone": "M16",
+    "epic": "E06",
+    "title": "Design / contract review",
+    "details": "Deploy per-service digest after smoke/contract/migration checks; environment gate; previous image retention",
+    "status": "unstarted"
+  },
+  {
+    "id": "M16-T02",
+    "milestone": "M16",
+    "epic": "E06",
+    "title": "Independent implementation",
+    "details": "F19 release Notification without six core image changes",
+    "status": "unstarted"
+  },
+  {
+    "id": "M16-T03",
+    "milestone": "M16",
+    "epic": "E06",
+    "title": "Failure and acceptance evidence",
+    "details": "Bad readiness image, incompatible required field, failed migration; Notification-only diff; failed update leaves working pods; revert image retains schema compatibility",
+    "status": "unstarted"
+  },
+  {
+    "id": "M16-T04",
+    "milestone": "M16",
+    "epic": "E06",
+    "title": "Review / skill confirmation",
+    "details": "Explain why destructive migration cannot be rolled back by image rollback; Actual release/rollback recorded, previous consumer works expanded schema",
+    "status": "unstarted"
+  },
+  {
+    "id": "M17-T01",
+    "milestone": "M17",
+    "epic": "E06",
+    "title": "Design / contract review",
+    "details": "Mandatory local isolated VM/state simulation; optional AWS sandbox only after user spending authorization; snapshots, encryption and restore",
+    "status": "unstarted"
+  },
+  {
+    "id": "M17-T02",
+    "milestone": "M17",
+    "epic": "E06",
+    "title": "Independent implementation",
+    "details": "F20/N10 isolated restore; state/provider reconcile across differing backup cuts",
+    "status": "unstarted"
+  },
+  {
+    "id": "M17-T03",
+    "milestone": "M17",
+    "epic": "E06",
+    "title": "Failure and acceptance evidence",
+    "details": "Missing volume, corrupt backup, mismatched service restore points; Second Ansible run unchanged; restore≤30min fixture, delta known; no credentials in state repo",
+    "status": "unstarted"
+  },
+  {
+    "id": "M17-T04",
+    "milestone": "M17",
+    "epic": "E06",
+    "title": "Review / skill confirmation",
+    "details": "Explain resource graph, drift and RPO vs RTO; estimate cloud cost with sourced assumptions; Clean recovery proves allocation/ledger counts and reports unrecoverable delta",
+    "status": "unstarted"
+  },
+  {
+    "id": "M18-T01",
+    "milestone": "M18",
+    "epic": "E07",
+    "title": "Design / contract review",
+    "details": "Clean install, demo every core journey, independent release, security/resilience/performance/restore, architecture questions",
+    "status": "unstarted"
+  },
+  {
+    "id": "M18-T02",
+    "milestone": "M18",
+    "epic": "E07",
+    "title": "Independent implementation",
+    "details": "All F01–F20 and N01–N12 have verified evidence and reviewer verdict",
+    "status": "unstarted"
+  },
+  {
+    "id": "M18-T03",
+    "milestone": "M18",
+    "epic": "E07",
+    "title": "Failure and acceptance evidence",
+    "details": "Reviewer chooses unexpected fault; no coaching during diagnosis; Every requirement evidence link resolves; reviewer independently runs critical races/recovery",
+    "status": "unstarted"
+  },
+  {
+    "id": "M18-T04",
+    "milestone": "M18",
+    "epic": "E07",
+    "title": "Review / skill confirmation",
+    "details": "Defend every boundary; explain smaller commercial alternative and current trade-offs; No open integrity/security blockers; unresolved limitations explicit; not merely all task checkboxes",
+    "status": "unstarted"
+  }
+]

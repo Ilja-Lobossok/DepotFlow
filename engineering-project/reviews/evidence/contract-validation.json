@@ -1,0 +1,202 @@
+{
+  "openapi": [
+    {
+      "service": "tenancy",
+      "status": "pass"
+    },
+    {
+      "service": "catalog",
+      "status": "pass"
+    },
+    {
+      "service": "inventory",
+      "status": "pass"
+    },
+    {
+      "service": "booking",
+      "status": "pass"
+    },
+    {
+      "service": "billing",
+      "status": "pass"
+    },
+    {
+      "service": "fulfillment",
+      "status": "pass"
+    },
+    {
+      "service": "notification",
+      "status": "pass"
+    }
+  ],
+  "asyncapi": [
+    {
+      "service": "tenancy",
+      "status": "pass",
+      "warnings": [
+        "The latest version of AsyncAPi is not used. It is recommended update to the \"3.1.0\" version."
+      ]
+    },
+    {
+      "service": "catalog",
+      "status": "pass",
+      "warnings": [
+        "The latest version of AsyncAPi is not used. It is recommended update to the \"3.1.0\" version."
+      ]
+    },
+    {
+      "service": "inventory",
+      "status": "pass",
+      "warnings": [
+        "The latest version of AsyncAPi is not used. It is recommended update to the \"3.1.0\" version."
+      ]
+    },
+    {
+      "service": "booking",
+      "status": "pass",
+      "warnings": [
+        "The latest version of AsyncAPi is not used. It is recommended update to the \"3.1.0\" version."
+      ]
+    },
+    {
+      "service": "billing",
+      "status": "pass",
+      "warnings": [
+        "The latest version of AsyncAPi is not used. It is recommended update to the \"3.1.0\" version."
+      ]
+    },
+    {
+      "service": "fulfillment",
+      "status": "pass",
+      "warnings": [
+        "The latest version of AsyncAPi is not used. It is recommended update to the \"3.1.0\" version."
+      ]
+    },
+    {
+      "service": "notification",
+      "status": "pass",
+      "warnings": [
+        "The latest version of AsyncAPi is not used. It is recommended update to the \"3.1.0\" version."
+      ]
+    }
+  ],
+  "eventSchemas": [
+    {
+      "name": "allocation.committed.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "allocation.released.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "asset.unavailable.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "billing.authorize-requested.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "billing.settle-requested.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "billing.void-requested.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "booking.cancelled.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "booking.commit-requested.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "booking.confirmed.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "booking.release-requested.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "booking.reserve-requested.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "catalog.changed.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "fulfillment.handed-over.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "fulfillment.returned.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "hold.created.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "hold.expired.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "hold.rejected.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "membership.changed.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "payment.authorized.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "payment.captured.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "payment.failed.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "payment.refunded.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    },
+    {
+      "name": "payment.voided.v1.schema.json",
+      "status": "pass",
+      "negative": "missing event_id rejected"
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

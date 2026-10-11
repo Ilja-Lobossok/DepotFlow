@@ -1,0 +1,123 @@
+{
+  "title": "Booking state — guarded transitions",
+  "kind": "State",
+  "width": 1240,
+  "height": 720,
+  "nodes": [
+    [
+      "pending",
+      "PENDING",
+      "Hold → authorization → commit",
+      40,
+      125,
+      270,
+      90
+    ],
+    [
+      "confirmed",
+      "CONFIRMED",
+      "Only after committed + authorized",
+      460,
+      125,
+      280,
+      90
+    ],
+    [
+      "claim",
+      "HANDOVER_CLAIMED",
+      "Atomic cancellation fence",
+      900,
+      125,
+      290,
+      90
+    ],
+    [
+      "cancel",
+      "CANCELLING / COMPENSATING",
+      "Release + full void evidence",
+      40,
+      355,
+      320,
+      90
+    ],
+    [
+      "terminal",
+      "CANCELLED / FAILED",
+      "Late events still compensated",
+      40,
+      570,
+      320,
+      90
+    ],
+    [
+      "inuse",
+      "IN_USE",
+      "Physical handover fact",
+      900,
+      355,
+      290,
+      90
+    ],
+    [
+      "settle",
+      "SETTLING",
+      "Return + release → capture/void",
+      460,
+      355,
+      300,
+      90
+    ],
+    [
+      "complete",
+      "COMPLETED / MANUAL_REVIEW",
+      "Funds known / explicit unresolved",
+      460,
+      570,
+      370,
+      90
+    ]
+  ],
+  "edges": [
+    [
+      "pending",
+      "confirmed",
+      "commit proof"
+    ],
+    [
+      "pending",
+      "cancel",
+      "expiry/cancel"
+    ],
+    [
+      "confirmed",
+      "cancel",
+      "cancel wins"
+    ],
+    [
+      "confirmed",
+      "claim",
+      "claim wins"
+    ],
+    [
+      "claim",
+      "inuse",
+      "handover fact"
+    ],
+    [
+      "cancel",
+      "terminal",
+      "compensated"
+    ],
+    [
+      "inuse",
+      "settle",
+      "returned"
+    ],
+    [
+      "settle",
+      "complete",
+      "settlement evidence"
+    ]
+  ],
+  "groups": []
+}

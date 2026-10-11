@@ -1,0 +1,83 @@
+{
+  "title": "Component: Booking",
+  "kind": "Components",
+  "width": 1060,
+  "height": 560,
+  "nodes": [
+    [
+      "http",
+      "HTTP / auth adapter",
+      "JWT • tenant • validation",
+      45,
+      160
+    ],
+    [
+      "domain",
+      "Domain application",
+      "Transitions • version • invariants",
+      390,
+      160
+    ],
+    [
+      "repo",
+      "Owned repository",
+      "DB transaction • locks",
+      740,
+      160
+    ],
+    [
+      "inbox",
+      "AMQP consumer",
+      "Schema • inbox • ACK after commit",
+      45,
+      390
+    ],
+    [
+      "outbox",
+      "Outbox publisher",
+      "mandatory + confirm → published",
+      390,
+      390
+    ],
+    [
+      "adapter",
+      "Scheduler / provider adapter",
+      "Lease/reconcile",
+      740,
+      390
+    ]
+  ],
+  "edges": [
+    [
+      "http",
+      "domain",
+      "command"
+    ],
+    [
+      "inbox",
+      "domain",
+      "effect"
+    ],
+    [
+      "domain",
+      "repo",
+      "atomic write"
+    ],
+    [
+      "repo",
+      "outbox",
+      "committed outbox"
+    ],
+    [
+      "adapter",
+      "domain",
+      "resume/query"
+    ],
+    [
+      "outbox",
+      "inbox",
+      "via RabbitMQ"
+    ]
+  ],
+  "groups": []
+}

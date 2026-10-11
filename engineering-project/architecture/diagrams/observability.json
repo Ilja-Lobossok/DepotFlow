@@ -1,0 +1,100 @@
+{
+  "title": "Observability — correlate metrics, logs and traces",
+  "kind": "Observability",
+  "width": 1240,
+  "height": 640,
+  "nodes": [
+    [
+      "apps",
+      "7services + adapters",
+      "HTTP / AMQP trace context",
+      40,
+      130,
+      290,
+      90
+    ],
+    [
+      "collector",
+      "OTel collector",
+      "Batch • redact • bounded queue",
+      415,
+      130,
+      310,
+      90
+    ],
+    [
+      "tempo",
+      "Tempo",
+      "Causal spans/exemplars",
+      870,
+      130,
+      280,
+      90
+    ],
+    [
+      "prom",
+      "Prometheus",
+      "Histograms; low-cardinality labels",
+      40,
+      380,
+      290,
+      90
+    ],
+    [
+      "loki",
+      "Loki",
+      "JSON logs; no JWT/email",
+      415,
+      380,
+      310,
+      90
+    ],
+    [
+      "grafana",
+      "Grafana / alerts",
+      "SLO / queue age / saga pending",
+      870,
+      380,
+      280,
+      90
+    ]
+  ],
+  "edges": [
+    [
+      "apps",
+      "collector",
+      "OTLP"
+    ],
+    [
+      "collector",
+      "tempo",
+      "traces"
+    ],
+    [
+      "apps",
+      "prom",
+      "scrape"
+    ],
+    [
+      "collector",
+      "loki",
+      "logs"
+    ],
+    [
+      "prom",
+      "grafana",
+      "SLI"
+    ],
+    [
+      "loki",
+      "grafana",
+      "trace_id"
+    ],
+    [
+      "tempo",
+      "grafana",
+      "trace links"
+    ]
+  ],
+  "groups": []
+}

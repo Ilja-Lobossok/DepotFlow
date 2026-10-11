@@ -1,0 +1,346 @@
+[
+  {
+    "id": "context",
+    "title": "System context",
+    "kind": "Context",
+    "source": "architecture/diagrams/context.json",
+    "path": "architecture/diagrams/context.svg",
+    "doc": "architecture/system-design.md"
+  },
+  {
+    "id": "containers",
+    "title": "Container diagram — 7 independent business services",
+    "kind": "Containers",
+    "source": "architecture/diagrams/containers.json",
+    "path": "architecture/diagrams/containers.svg",
+    "doc": "architecture/system-design.md"
+  },
+  {
+    "id": "component-inventory",
+    "title": "Component: Inventory",
+    "kind": "Components",
+    "source": "architecture/diagrams/component-inventory.json",
+    "path": "architecture/diagrams/component-inventory.svg",
+    "doc": "architecture/services/inventory.md"
+  },
+  {
+    "id": "component-booking",
+    "title": "Component: Booking",
+    "kind": "Components",
+    "source": "architecture/diagrams/component-booking.json",
+    "path": "architecture/diagrams/component-booking.svg",
+    "doc": "architecture/services/booking.md"
+  },
+  {
+    "id": "component-billing",
+    "title": "Component: Billing",
+    "kind": "Components",
+    "source": "architecture/diagrams/component-billing.json",
+    "path": "architecture/diagrams/component-billing.svg",
+    "doc": "architecture/services/billing.md"
+  },
+  {
+    "id": "sequence-checkout",
+    "title": "Sequence — confirmation saga",
+    "kind": "Sequence",
+    "source": "architecture/diagrams/sequence-checkout.json",
+    "path": "architecture/diagrams/sequence-checkout.svg",
+    "doc": "product/business-processes.md"
+  },
+  {
+    "id": "sequence-cancel",
+    "title": "Sequence — late authorization after expiry",
+    "kind": "Sequence",
+    "source": "architecture/diagrams/sequence-cancel.json",
+    "path": "architecture/diagrams/sequence-cancel.svg",
+    "doc": "product/business-processes.md"
+  },
+  {
+    "id": "sequence-handover-return",
+    "title": "Sequence — physical fence and settlement",
+    "kind": "Sequence",
+    "source": "architecture/diagrams/sequence-handover-return.json",
+    "path": "architecture/diagrams/sequence-handover-return.svg",
+    "doc": "product/business-processes.md"
+  },
+  {
+    "id": "event-flow",
+    "title": "Event flow — durable business effect",
+    "kind": "Events",
+    "source": "architecture/diagrams/event-flow.json",
+    "path": "architecture/diagrams/event-flow.svg",
+    "doc": "architecture/system-design.md"
+  },
+  {
+    "id": "er-tenancy",
+    "title": "ER — Tenancy",
+    "kind": "ER",
+    "source": "architecture/diagrams/er-tenancy.json",
+    "path": "architecture/diagrams/er-tenancy.svg",
+    "doc": "data/models/tenancy.md"
+  },
+  {
+    "id": "er-catalog",
+    "title": "ER — Catalog",
+    "kind": "ER",
+    "source": "architecture/diagrams/er-catalog.json",
+    "path": "architecture/diagrams/er-catalog.svg",
+    "doc": "data/models/catalog.md"
+  },
+  {
+    "id": "er-inventory",
+    "title": "ER — Inventory",
+    "kind": "ER",
+    "source": "architecture/diagrams/er-inventory.json",
+    "path": "architecture/diagrams/er-inventory.svg",
+    "doc": "data/models/inventory.md"
+  },
+  {
+    "id": "er-booking",
+    "title": "ER — Booking",
+    "kind": "ER",
+    "source": "architecture/diagrams/er-booking.json",
+    "path": "architecture/diagrams/er-booking.svg",
+    "doc": "data/models/booking.md"
+  },
+  {
+    "id": "er-billing",
+    "title": "ER — Billing",
+    "kind": "ER",
+    "source": "architecture/diagrams/er-billing.json",
+    "path": "architecture/diagrams/er-billing.svg",
+    "doc": "data/models/billing.md"
+  },
+  {
+    "id": "er-fulfillment",
+    "title": "ER — Fulfillment",
+    "kind": "ER",
+    "source": "architecture/diagrams/er-fulfillment.json",
+    "path": "architecture/diagrams/er-fulfillment.svg",
+    "doc": "data/models/fulfillment.md"
+  },
+  {
+    "id": "er-notification",
+    "title": "ER — Notification",
+    "kind": "ER",
+    "source": "architecture/diagrams/er-notification.json",
+    "path": "architecture/diagrams/er-notification.svg",
+    "doc": "data/models/notification.md"
+  },
+  {
+    "id": "deployment-local",
+    "title": "Deployment — local",
+    "kind": "Deployment",
+    "source": "architecture/diagrams/deployment-local.json",
+    "path": "architecture/diagrams/deployment-local.svg",
+    "doc": "operations/environments.md"
+  },
+  {
+    "id": "deployment-test",
+    "title": "Deployment — test",
+    "kind": "Deployment",
+    "source": "architecture/diagrams/deployment-test.json",
+    "path": "architecture/diagrams/deployment-test.svg",
+    "doc": "operations/environments.md"
+  },
+  {
+    "id": "deployment-production-like",
+    "title": "Deployment — production-like",
+    "kind": "Deployment",
+    "source": "architecture/diagrams/deployment-production-like.json",
+    "path": "architecture/diagrams/deployment-production-like.svg",
+    "doc": "operations/environments.md"
+  },
+  {
+    "id": "network",
+    "title": "Network — allowed direction and trust",
+    "kind": "Network",
+    "source": "architecture/diagrams/network.json",
+    "path": "architecture/diagrams/network.svg",
+    "doc": "operations/network-security.md"
+  },
+  {
+    "id": "ci-cd",
+    "title": "CI/CD — service-scoped delivery DAG",
+    "kind": "CI/CD",
+    "source": "architecture/diagrams/ci-cd.json",
+    "path": "architecture/diagrams/ci-cd.svg",
+    "doc": "operations/release-rollback.md"
+  },
+  {
+    "id": "observability",
+    "title": "Observability — correlate metrics, logs and traces",
+    "kind": "Observability",
+    "source": "architecture/diagrams/observability.json",
+    "path": "architecture/diagrams/observability.svg",
+    "doc": "reviews/test-strategy.md"
+  },
+  {
+    "id": "security",
+    "title": "Security — identity is checked at every boundary",
+    "kind": "Security",
+    "source": "architecture/diagrams/security.json",
+    "path": "architecture/diagrams/security.svg",
+    "doc": "operations/network-security.md"
+  },
+  {
+    "id": "failure-recovery",
+    "title": "Failure/recovery — ambiguous PSP authorization",
+    "kind": "Failure",
+    "source": "architecture/diagrams/failure-recovery.json",
+    "path": "architecture/diagrams/failure-recovery.svg",
+    "doc": "operations/runbooks/payment-unknown.md"
+  },
+  {
+    "id": "failure-restore",
+    "title": "Failure/recovery — isolated multi-owner restore",
+    "kind": "Failure",
+    "source": "architecture/diagrams/failure-restore.json",
+    "path": "architecture/diagrams/failure-restore.svg",
+    "doc": "operations/backup-recovery.md"
+  },
+  {
+    "id": "booking-state",
+    "title": "Booking state — guarded transitions",
+    "kind": "State",
+    "source": "architecture/diagrams/booking-state.json",
+    "path": "architecture/diagrams/booking-state.svg",
+    "doc": "product/business-processes.md"
+  },
+  {
+    "id": "customer-flow",
+    "title": "Customer journey",
+    "kind": "User flow",
+    "source": "architecture/diagrams/customer-flow.json",
+    "path": "architecture/diagrams/customer-flow.svg",
+    "doc": "design/design-spec.md"
+  },
+  {
+    "id": "warehouse-flow",
+    "title": "Warehouse journey",
+    "kind": "User flow",
+    "source": "architecture/diagrams/warehouse-flow.json",
+    "path": "architecture/diagrams/warehouse-flow.svg",
+    "doc": "design/design-spec.md"
+  },
+  {
+    "id": "roadmap-backend-engineering",
+    "title": "Backend Engineering roadmap",
+    "kind": "Roadmap",
+    "source": "architecture/diagrams/roadmap-backend-engineering.json",
+    "path": "architecture/diagrams/roadmap-backend-engineering.svg",
+    "doc": "roadmaps/backend-engineering.md"
+  },
+  {
+    "id": "roadmap-frontend-engineering",
+    "title": "Frontend Engineering roadmap",
+    "kind": "Roadmap",
+    "source": "architecture/diagrams/roadmap-frontend-engineering.json",
+    "path": "architecture/diagrams/roadmap-frontend-engineering.svg",
+    "doc": "roadmaps/frontend-engineering.md"
+  },
+  {
+    "id": "roadmap-databases",
+    "title": "Databases roadmap",
+    "kind": "Roadmap",
+    "source": "architecture/diagrams/roadmap-databases.json",
+    "path": "architecture/diagrams/roadmap-databases.svg",
+    "doc": "roadmaps/databases.md"
+  },
+  {
+    "id": "roadmap-distributed-systems",
+    "title": "Distributed Systems roadmap",
+    "kind": "Roadmap",
+    "source": "architecture/diagrams/roadmap-distributed-systems.json",
+    "path": "architecture/diagrams/roadmap-distributed-systems.svg",
+    "doc": "roadmaps/distributed-systems.md"
+  },
+  {
+    "id": "roadmap-redis-caching",
+    "title": "Redis & Caching roadmap",
+    "kind": "Roadmap",
+    "source": "architecture/diagrams/roadmap-redis-caching.json",
+    "path": "architecture/diagrams/roadmap-redis-caching.svg",
+    "doc": "roadmaps/redis-caching.md"
+  },
+  {
+    "id": "roadmap-message-brokers",
+    "title": "Message Brokers roadmap",
+    "kind": "Roadmap",
+    "source": "architecture/diagrams/roadmap-message-brokers.json",
+    "path": "architecture/diagrams/roadmap-message-brokers.svg",
+    "doc": "roadmaps/message-brokers.md"
+  },
+  {
+    "id": "roadmap-linux-networking",
+    "title": "Linux & Networking roadmap",
+    "kind": "Roadmap",
+    "source": "architecture/diagrams/roadmap-linux-networking.json",
+    "path": "architecture/diagrams/roadmap-linux-networking.svg",
+    "doc": "roadmaps/linux-networking.md"
+  },
+  {
+    "id": "roadmap-docker-kubernetes",
+    "title": "Docker & Kubernetes roadmap",
+    "kind": "Roadmap",
+    "source": "architecture/diagrams/roadmap-docker-kubernetes.json",
+    "path": "architecture/diagrams/roadmap-docker-kubernetes.svg",
+    "doc": "roadmaps/docker-kubernetes.md"
+  },
+  {
+    "id": "roadmap-ci-cd-iac",
+    "title": "CI-CD & IaC roadmap",
+    "kind": "Roadmap",
+    "source": "architecture/diagrams/roadmap-ci-cd-iac.json",
+    "path": "architecture/diagrams/roadmap-ci-cd-iac.svg",
+    "doc": "roadmaps/ci-cd-iac.md"
+  },
+  {
+    "id": "roadmap-cloud",
+    "title": "Cloud roadmap",
+    "kind": "Roadmap",
+    "source": "architecture/diagrams/roadmap-cloud.json",
+    "path": "architecture/diagrams/roadmap-cloud.svg",
+    "doc": "roadmaps/cloud.md"
+  },
+  {
+    "id": "roadmap-observability",
+    "title": "Observability roadmap",
+    "kind": "Roadmap",
+    "source": "architecture/diagrams/roadmap-observability.json",
+    "path": "architecture/diagrams/roadmap-observability.svg",
+    "doc": "roadmaps/observability.md"
+  },
+  {
+    "id": "roadmap-security",
+    "title": "Security roadmap",
+    "kind": "Roadmap",
+    "source": "architecture/diagrams/roadmap-security.json",
+    "path": "architecture/diagrams/roadmap-security.svg",
+    "doc": "roadmaps/security.md"
+  },
+  {
+    "id": "roadmap-testing-performance-reliability",
+    "title": "Testing Performance Reliability roadmap",
+    "kind": "Roadmap",
+    "source": "architecture/diagrams/roadmap-testing-performance-reliability.json",
+    "path": "architecture/diagrams/roadmap-testing-performance-reliability.svg",
+    "doc": "roadmaps/testing-performance-reliability.md"
+  },
+  {
+    "id": "roadmap-system-design",
+    "title": "System Design roadmap",
+    "kind": "Roadmap",
+    "source": "architecture/diagrams/roadmap-system-design.json",
+    "path": "architecture/diagrams/roadmap-system-design.svg",
+    "doc": "roadmaps/system-design.md"
+  },
+  {
+    "id": "roadmap-project",
+    "title": "Project roadmap — all 18 prerequisites",
+    "kind": "Roadmap",
+    "source": "architecture/diagrams/roadmap-project.json",
+    "path": "architecture/diagrams/roadmap-project.svg",
+    "doc": "roadmaps/project.md"
+  }
+]

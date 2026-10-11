@@ -1,0 +1,182 @@
+[
+  {
+    "id": "R01",
+    "title": "Wise Graduate Software Engineer",
+    "scope": "Tallinn; graduate",
+    "url": "https://wise.jobs/job/graduate-software-engineer-in-tallinn-jid-2903",
+    "status": "Expired explicitly; cohort September 2026",
+    "notes": "CS fundamentals, major programming language, review, communication. Language list is not a mandatory stack.",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "R02",
+    "title": "Wise API Experience Java",
+    "scope": "Europe; senior reference",
+    "url": "https://jobs.smartrecruiters.com/Wise/744000063454628-senior-software-engineer-i-api-experience-java",
+    "status": "Accessible posting; older indexed page, hiring status unconfirmed",
+    "notes": "Java/Spring Boot, public APIs, microservices, events, relational data, Kafka or similar. Senior expectations are a future depth reference.",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "R03",
+    "title": "Bolt Engineering careers",
+    "scope": "Tallinn; senior reference",
+    "url": "https://bolt.eu/en/careers/teams/engineering/",
+    "status": "Accessible employer careers page",
+    "notes": "Node.js/TypeScript, distributed systems and product algorithms; reinforces transferability, not a junior hiring guarantee.",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "R04",
+    "title": "Codeborne full-stack developer",
+    "scope": "Tallinn; mid-senior",
+    "url": "https://codeborne.com/en/jobs/full-stack-developer-tallinn/",
+    "status": "Accessible employer posting",
+    "notes": "Java/Kotlin or Svelte/Vue, TDD, pair work, client communication. React is not universal.",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "R05",
+    "title": "Tipico (Junior) Java Developer",
+    "scope": "Europe; junior",
+    "url": "https://jobs.smartrecruiters.com/Tipico/744000136171599--junior-java-developer-m-f-x-?trid=7d1dcdfa-96a8-4e55-bb9c-0db211f5a9b3",
+    "status": "Indexed employer posting; availability unconfirmed",
+    "notes": "Java backend, React frontend, first practical experience, review and end-to-end ownership.",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "R06",
+    "title": "Version 1 Junior Java Developer",
+    "scope": "UK; junior title, 2 years required",
+    "url": "https://jobs.smartrecruiters.com/Version1/744000148946885-junior-java-developer",
+    "status": "Accessible posting",
+    "notes": "Java APIs, Spring, Git, Maven, Jenkins, Azure desirable. Junior title does not mean zero experience.",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "R07",
+    "title": "LOGEX Junior Platform Engineer",
+    "scope": "Amsterdam; junior title, around 2 years",
+    "url": "https://logex.recruitee.com/o/platform-engineer-1?lang=en",
+    "status": "Accessible older indexed posting; availability unconfirmed",
+    "notes": "K8s/K3s, Linux, Terraform/Ansible, cloud. Platform work combines troubleshooting and delivery.",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "R08",
+    "title": "SEB Junior Software Platform Engineer",
+    "scope": "Solna; graduate/early career",
+    "url": "https://jobs.eu.lever.co/seb/3ae41077-3709-4376-b54f-b47ab3af01b8",
+    "status": "Accessible; deadline 2026-11-01 stated",
+    "notes": "CI/CD, testing, containers, IaC. Prior platform employment not required; listed tools are advantages, not all mandatory.",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "R09",
+    "title": "Capgemini Junior Cloud Engineer",
+    "scope": "Porto; junior title",
+    "url": "https://careers.capgemini.com/job/Vila-Nova-de-Gaia-Junior-Platform-Engineer-%28Porto%29/1399964033/?feedId=388633&tcsource=apply",
+    "status": "Indexed employer posting",
+    "notes": "Cloud, IaC, Linux, networking, containers and incident analysis; requirements include strong experience despite title.",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "R10",
+    "title": "Evolution React openings",
+    "scope": "Tallinn; mid-senior",
+    "url": "https://careers.evolution.com/job/744000126042610/",
+    "status": "Direct fetch 410 Gone; excluded from active evidence",
+    "notes": "Search snippet mentions React/TypeScript and delivery tooling; retained as a negative freshness check only.",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "E01",
+    "title": "Zalando: Simplicity by Distributing Complexity",
+    "scope": "Engineering; 2018-01-23",
+    "url": "https://engineering.zalando.com/posts/2018/01/simplicity-by-distributing-complexity.html",
+    "status": "Article read",
+    "notes": "Independent data ownership and derived views illustrate the costs of event driven data aggregation. Not a blueprint for this domain.",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "D01",
+    "title": "PostgreSQL range types",
+    "scope": "Official documentation",
+    "url": "https://www.postgresql.org/docs/current/rangetypes.html",
+    "status": "Read; page resolves to PostgreSQL 18",
+    "notes": "Range exclusion can prevent overlapping allocations; design exercise uses this invariant.",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "D02",
+    "title": "RabbitMQ confirms",
+    "scope": "Official documentation",
+    "url": "https://www.rabbitmq.com/docs/confirms",
+    "status": "Read",
+    "notes": "Publisher confirms and consumer acknowledgements are separate; they do not guarantee business exactly-once.",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "D03",
+    "title": "RabbitMQ reliability",
+    "scope": "Official documentation",
+    "url": "https://www.rabbitmq.com/docs/reliability",
+    "status": "Read",
+    "notes": "Connection loss may cause redelivery; consumers must tolerate duplicates.",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "D04",
+    "title": "Kubernetes probes",
+    "scope": "Official documentation",
+    "url": "https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/",
+    "status": "Read",
+    "notes": "Startup, readiness and liveness serve different purposes; do not restart the fleet for broker failure.",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "D05",
+    "title": "OpenTelemetry traces",
+    "scope": "Official documentation",
+    "url": "https://opentelemetry.io/docs/concepts/signals/traces/",
+    "status": "Read",
+    "notes": "Trace/span context connects causal work across services.",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "D06",
+    "title": "Spring Boot requirements",
+    "scope": "Official documentation",
+    "url": "https://docs.spring.io/spring-boot/system-requirements.html",
+    "status": "Read",
+    "notes": "Choose Java 21 and Boot 4.1 family, verify compatible libraries and pin exact patch at M01.",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "D07",
+    "title": "OpenAPI 3.1.1",
+    "scope": "Specification",
+    "url": "https://spec.openapis.org/oas/v3.1.1.html",
+    "status": "Read",
+    "notes": "Machine-readable HTTP contracts, JSON Schema data descriptions.",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "D08",
+    "title": "AsyncAPI 3.0",
+    "scope": "Specification",
+    "url": "https://www.asyncapi.com/docs/reference/specification/v3.0.0",
+    "status": "Read",
+    "notes": "Per-application send/receive contracts; channels do not by themselves define queue topology.",
+    "checked": "2026-10-11"
+  },
+  {
+    "id": "D09",
+    "title": "Keycloak OIDC",
+    "scope": "Official documentation",
+    "url": "https://www.keycloak.org/securing-apps/oidc-layers",
+    "status": "Read",
+    "notes": "OIDC provider separates authentication from application membership authorization.",
+    "checked": "2026-10-11"
+  }
+]

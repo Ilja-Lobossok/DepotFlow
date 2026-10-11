@@ -1,0 +1,9 @@
+# L03 — Delivery pipeline comparison: GitHub Actions vs Jenkins
+
+Optional full comparative lab after M13. Core pipeline uses GitHub Actions and portable local check scripts. Objective: separate orchestration tool from actual checks, understand runner trust and delivery secrets.
+
+Use isolated local Jenkins controller/agent image with pinned digest and sandbox repository copy; do not expose Docker socket or personal credentials. Execute the same portable scripts for quote tests, Inventory contention, contract backward compatibility, image build/SBOM and smoke. Controller credentials minimal; no remote push/deploy except isolated namespace. Build one changed service plus reverse contract dependencies, not every service blindly. Publish digest and raw logs as artifacts, no echo-only gates.
+
+Scenarios: failed unit/assertion must stop image promotion; old-consumer failure blocks release; changed shared contract triggers consumers even when service source unchanged; agent restart loses ephemeral workspace but artifact/source manifest permits rerun; missing secret fails safely without logged value. Timeout10min lab job and artifact retention7days design assumptions, measured resource cost compared to GitHub Actions runner/local fallback. Explain hosted runner versus self-hosted trust, webhook/signature, plugin update burden and reproducibility.
+
+Deliverables Jenkinsfile, agent version/digest, permissions diagram, artifact manifest, five negative/failure reports, comparison ADR. Acceptance: same source seed produces identical test verdicts in both orchestrators, untrusted PR cannot access deployment secret, failure exit code not swallowed by shell, no personal profile/settings changed. Review chooses a failed contract and asks where promotion is prevented. Done after actual execution and source review; launching Jenkins UI alone insufficient.

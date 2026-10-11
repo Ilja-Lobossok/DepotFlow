@@ -1,0 +1,108 @@
+{
+  "title": "Network — allowed direction and trust",
+  "kind": "Network",
+  "width": 1240,
+  "height": 640,
+  "nodes": [
+    [
+      "browser",
+      "Browser",
+      "Public client",
+      50,
+      145
+    ],
+    [
+      "edge",
+      "Gateway / IdP",
+      "HTTPS443 only public ingress",
+      380,
+      145
+    ],
+    [
+      "apps",
+      "App namespace",
+      "7 scoped service identities",
+      730,
+      145,
+      360,
+      90
+    ],
+    [
+      "db",
+      "Private Postgres",
+      "DB role owner-only5432",
+      730,
+      380,
+      360,
+      90
+    ],
+    [
+      "amqp",
+      "Private RabbitMQ",
+      "AMQPS5671 per-service ACL",
+      380,
+      380,
+      260,
+      90
+    ],
+    [
+      "telemetry",
+      "Operator telemetry",
+      "4317 + restricted dashboards",
+      50,
+      380,
+      250,
+      90
+    ]
+  ],
+  "edges": [
+    [
+      "browser",
+      "edge",
+      "HTTPS"
+    ],
+    [
+      "edge",
+      "apps",
+      "forward JWT"
+    ],
+    [
+      "apps",
+      "db",
+      "owned TLS"
+    ],
+    [
+      "apps",
+      "amqp",
+      "ACL"
+    ],
+    [
+      "apps",
+      "telemetry",
+      "OTLP"
+    ]
+  ],
+  "groups": [
+    [
+      "Untrusted",
+      20,
+      90,
+      280,
+      180
+    ],
+    [
+      "Edge boundary",
+      340,
+      90,
+      300,
+      180
+    ],
+    [
+      "Private network / deny by default",
+      690,
+      90,
+      450,
+      440
+    ]
+  ]
+}

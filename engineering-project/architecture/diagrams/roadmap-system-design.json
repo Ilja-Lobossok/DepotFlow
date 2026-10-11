@@ -1,0 +1,62 @@
+{
+  "title": "System Design roadmap",
+  "kind": "Roadmap",
+  "width": 1250,
+  "height": 700,
+  "nodes": [
+    [
+      "M01",
+      "M01 • Boundaries & ADR",
+      "Lab foundations|Proof in assignment",
+      40,
+      125,
+      350,
+      95
+    ],
+    [
+      "M04",
+      "M04 • Strong local invariant",
+      "Inventory integrity|Proof in assignment",
+      440,
+      125,
+      350,
+      95
+    ],
+    [
+      "M08",
+      "M08 • Eventual consistency c",
+      "Cancellation & races|Proof in assignment",
+      840,
+      125,
+      350,
+      95
+    ],
+    [
+      "M18",
+      "M18 • Architecture defense",
+      "Engineering audit & architecture |Proof in assignment",
+      40,
+      365,
+      350,
+      95
+    ]
+  ],
+  "edges": [
+    [
+      "M01",
+      "M04",
+      "next checkpoint"
+    ],
+    [
+      "M04",
+      "M08",
+      "next checkpoint"
+    ],
+    [
+      "M08",
+      "M18",
+      "next checkpoint"
+    ]
+  ],
+  "groups": []
+}

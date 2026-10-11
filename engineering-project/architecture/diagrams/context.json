@@ -1,0 +1,92 @@
+{
+  "title": "System context",
+  "kind": "Context",
+  "width": 1240,
+  "height": 640,
+  "nodes": [
+    [
+      "client",
+      "Корпоративный клиент",
+      "Поиск • аренда • отмена",
+      35,
+      110
+    ],
+    [
+      "operator",
+      "Сотрудник склада",
+      "Выдача • возврат • ремонт",
+      35,
+      280
+    ],
+    [
+      "admin",
+      "Admin / Finance",
+      "Роли • тариф • refund",
+      35,
+      450
+    ],
+    [
+      "system",
+      "DepotFlow",
+      "B2B rental platform|7 business owners",
+      485,
+      260,
+      270,
+      110
+    ],
+    [
+      "idp",
+      "Keycloak",
+      "Authentication / OIDC",
+      920,
+      120
+    ],
+    [
+      "psp",
+      "Sandbox PSP",
+      "Authorization • query • capture",
+      920,
+      290
+    ],
+    [
+      "mail",
+      "Mail sink",
+      "Synthetic messages only",
+      920,
+      460
+    ]
+  ],
+  "edges": [
+    [
+      "client",
+      "system",
+      "HTTPS"
+    ],
+    [
+      "operator",
+      "system",
+      "HTTPS"
+    ],
+    [
+      "admin",
+      "system",
+      "HTTPS"
+    ],
+    [
+      "system",
+      "idp",
+      "OIDC/JWKS"
+    ],
+    [
+      "system",
+      "psp",
+      "Billing only"
+    ],
+    [
+      "system",
+      "mail",
+      "Notification only"
+    ]
+  ],
+  "groups": []
+}

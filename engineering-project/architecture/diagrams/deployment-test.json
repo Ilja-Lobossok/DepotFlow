@@ -1,0 +1,86 @@
+{
+  "title": "Deployment — test",
+  "kind": "Deployment",
+  "width": 1240,
+  "height": 640,
+  "nodes": [
+    [
+      "edge",
+      "Ingress / browser",
+      "TLS443 / local loopback",
+      50,
+      145
+    ],
+    [
+      "services",
+      "7service images",
+      "Independent digests/migrations|Ephemeral test environment • fixed fixture",
+      405,
+      145,
+      360,
+      100
+    ],
+    [
+      "storage",
+      "Owned DBs / volumes",
+      "7credentials; backup metadata",
+      405,
+      375,
+      360,
+      90
+    ],
+    [
+      "broker",
+      "RabbitMQ / Redis",
+      "1node or3quorum lab",
+      905,
+      145,
+      270,
+      90
+    ],
+    [
+      "obs",
+      "OTel/Grafana",
+      "Restricted operator network",
+      905,
+      375,
+      270,
+      90
+    ],
+    [
+      "backup",
+      "Isolated backup target",
+      "Checksums / restore namespace",
+      50,
+      375
+    ]
+  ],
+  "edges": [
+    [
+      "edge",
+      "services",
+      "HTTP"
+    ],
+    [
+      "services",
+      "storage",
+      "own SQL"
+    ],
+    [
+      "services",
+      "broker",
+      "AMQP/cache"
+    ],
+    [
+      "services",
+      "obs",
+      "telemetry"
+    ],
+    [
+      "storage",
+      "backup",
+      "snapshot"
+    ]
+  ],
+  "groups": []
+}

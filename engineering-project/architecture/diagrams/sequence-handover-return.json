@@ -1,0 +1,79 @@
+{
+  "actors": [
+    "Operator",
+    "Fulfillment",
+    "Booking",
+    "Inventory",
+    "Billing"
+  ],
+  "messages": [
+    [
+      "Operator",
+      "Fulfillment",
+      "handover + If-Match",
+      "sync"
+    ],
+    [
+      "Fulfillment",
+      "Inventory",
+      "physical eligibility / allocation check",
+      "sync"
+    ],
+    [
+      "Fulfillment",
+      "Booking",
+      "claim atomically vs cancel",
+      "sync"
+    ],
+    [
+      "Booking",
+      "Fulfillment",
+      "claim_id; cancellation fenced",
+      "sync"
+    ],
+    [
+      "Fulfillment",
+      "Booking",
+      "handed-over fact (also Inventory)",
+      "async"
+    ],
+    [
+      "Operator",
+      "Fulfillment",
+      "return inspection",
+      "sync"
+    ],
+    [
+      "Fulfillment",
+      "Inventory",
+      "returned fact / release or quarantine",
+      "async"
+    ],
+    [
+      "Fulfillment",
+      "Booking",
+      "returned fact",
+      "async"
+    ],
+    [
+      "Inventory",
+      "Booking",
+      "allocation.released",
+      "async"
+    ],
+    [
+      "Booking",
+      "Billing",
+      "settle-requested",
+      "async"
+    ],
+    [
+      "Billing",
+      "Booking",
+      "captured + void remainder",
+      "async"
+    ]
+  ],
+  "width": 1060,
+  "height": 832
+}

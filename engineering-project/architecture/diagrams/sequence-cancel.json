@@ -1,0 +1,54 @@
+{
+  "actors": [
+    "Client",
+    "Booking",
+    "Inventory",
+    "Billing"
+  ],
+  "messages": [
+    [
+      "Client",
+      "Booking",
+      "cancel + version",
+      "sync"
+    ],
+    [
+      "Booking",
+      "Inventory",
+      "release-requested / tombstone",
+      "async"
+    ],
+    [
+      "Inventory",
+      "Booking",
+      "allocation.released",
+      "async"
+    ],
+    [
+      "Billing",
+      "Booking",
+      "late payment.authorized",
+      "async"
+    ],
+    [
+      "Booking",
+      "Billing",
+      "void-requested (same intent)",
+      "async"
+    ],
+    [
+      "Billing",
+      "Booking",
+      "payment.voided full",
+      "async"
+    ],
+    [
+      "Booking",
+      "Client",
+      "GET CANCELLED after evidence",
+      "sync"
+    ]
+  ],
+  "width": 1000,
+  "height": 584
+}

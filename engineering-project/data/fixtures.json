@@ -1,0 +1,36 @@
+{
+  "seed": 20261011,
+  "clock": "2026-11-02T08:00:00Z",
+  "organizations": [
+    "org-A",
+    "org-B"
+  ],
+  "depots": [
+    "Tallinn",
+    "Tartu"
+  ],
+  "models": [
+    {
+      "name": "Cordless drill",
+      "daily_minor": 2500,
+      "deposit_minor": 10000,
+      "currency": "EUR"
+    }
+  ],
+  "assets": [
+    "scarce-001",
+    "pool-001",
+    "pool-002",
+    "pool-003",
+    "pool-004",
+    "pool-005",
+    "damaged-001"
+  ],
+  "roles": [
+    "customer",
+    "operator",
+    "finance",
+    "org_admin"
+  ],
+  "note": "Symbolic fixture IDs must be replaced with UUIDs by test factory; no real user data"
+}

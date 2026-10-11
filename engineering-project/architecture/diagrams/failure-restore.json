@@ -1,0 +1,90 @@
+{
+  "title": "Failure/recovery — isolated multi-owner restore",
+  "kind": "Failure",
+  "width": 1240,
+  "height": 640,
+  "nodes": [
+    [
+      "cut",
+      "Checkpoint manifest",
+      "Quiesce / per-owner snapshot times",
+      35,
+      130,
+      290,
+      90
+    ],
+    [
+      "restore",
+      "Isolated restore",
+      "Validate checksums/grants/schema",
+      420,
+      130,
+      310,
+      90
+    ],
+    [
+      "audit",
+      "Owner invariant audit",
+      "Counts • overlaps • ledger bounds",
+      855,
+      130,
+      300,
+      90
+    ],
+    [
+      "provider",
+      "PSP reconciliation",
+      "Provider keys may postdate backup",
+      420,
+      390,
+      310,
+      90
+    ],
+    [
+      "resume",
+      "Resume controlled traffic",
+      "Consumers/outbox after verification",
+      855,
+      390,
+      300,
+      90
+    ],
+    [
+      "report",
+      "Delta report",
+      "Measured RPO/RTO and losses",
+      35,
+      390,
+      290,
+      90
+    ]
+  ],
+  "edges": [
+    [
+      "cut",
+      "restore",
+      "snapshots"
+    ],
+    [
+      "restore",
+      "audit",
+      "no traffic"
+    ],
+    [
+      "audit",
+      "provider",
+      "known states"
+    ],
+    [
+      "provider",
+      "resume",
+      "reconciled"
+    ],
+    [
+      "resume",
+      "report",
+      "evidence"
+    ]
+  ],
+  "groups": []
+}

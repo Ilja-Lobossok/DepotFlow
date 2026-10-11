@@ -1,0 +1,62 @@
+{
+  "title": "Linux & Networking roadmap",
+  "kind": "Roadmap",
+  "width": 1250,
+  "height": 700,
+  "nodes": [
+    [
+      "M01",
+      "M01 • Processes/sockets/DNS",
+      "Lab foundations|Proof in assignment",
+      40,
+      125,
+      350,
+      95
+    ],
+    [
+      "M02",
+      "M02 • TLS/auth",
+      "Identity & tenant boundaries|Proof in assignment",
+      440,
+      125,
+      350,
+      95
+    ],
+    [
+      "M12",
+      "M12 • Trace network failure",
+      "Observability & incident diagnosi|Proof in assignment",
+      840,
+      125,
+      350,
+      95
+    ],
+    [
+      "M15",
+      "M15 • Network policies",
+      "Production-like Kubernetes & secu|Proof in assignment",
+      40,
+      365,
+      350,
+      95
+    ]
+  ],
+  "edges": [
+    [
+      "M01",
+      "M02",
+      "next checkpoint"
+    ],
+    [
+      "M02",
+      "M12",
+      "next checkpoint"
+    ],
+    [
+      "M12",
+      "M15",
+      "next checkpoint"
+    ]
+  ],
+  "groups": []
+}

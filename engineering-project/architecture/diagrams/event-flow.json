@@ -1,0 +1,83 @@
+{
+  "title": "Event flow — durable business effect",
+  "kind": "Events",
+  "width": 1240,
+  "height": 640,
+  "nodes": [
+    [
+      "tx",
+      "Producer owned DB",
+      "Business change + outbox|One transaction",
+      35,
+      150
+    ],
+    [
+      "pub",
+      "Publisher worker",
+      "Persistent • mandatory • confirms",
+      350,
+      150
+    ],
+    [
+      "broker",
+      "RabbitMQ",
+      "Durable exchange / queue",
+      680,
+      150
+    ],
+    [
+      "consume",
+      "Consumer transaction",
+      "Inbox + business + new outbox",
+      680,
+      380
+    ],
+    [
+      "ack",
+      "ACK after commit",
+      "Lost ACK → safe redelivery",
+      350,
+      380
+    ],
+    [
+      "dlq",
+      "DLQ quarantine",
+      "Poison/5attempts → operator",
+      35,
+      380
+    ]
+  ],
+  "edges": [
+    [
+      "tx",
+      "pub",
+      "poll"
+    ],
+    [
+      "pub",
+      "broker",
+      "confirm"
+    ],
+    [
+      "broker",
+      "consume",
+      "deliver"
+    ],
+    [
+      "consume",
+      "ack",
+      "commit then ACK"
+    ],
+    [
+      "consume",
+      "dlq",
+      "retry budget"
+    ],
+    [
+      "ack",
+      "broker",
+      "redelivery dedupe"
+    ]
+  ],
+  "groups": []
+}

@@ -1,0 +1,23 @@
+{
+  "owner": "fulfillment",
+  "tables": {
+    "jobs": "id, org_id, booking_id, customer_id, depot_id, asset_ids, start_at, end_at, status, version",
+    "handover_records": "id, org_id, job_id, asset_ids, actor_id, occurred_at",
+    "return_reports": "id, org_id, job_id, condition, late_days, damage_minor, notes, version",
+    "booking_projection": "booking_id, org_id, status, last_version, updated_at"
+  },
+  "relations": [
+    [
+      "jobs",
+      "handover_records",
+      "1 : 0..1 job_id"
+    ],
+    [
+      "jobs",
+      "return_reports",
+      "1 : 0..1 job_id"
+    ]
+  ],
+  "width": 1320,
+  "height": 790
+}

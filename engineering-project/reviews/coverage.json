@@ -1,0 +1,444 @@
+[
+  {
+    "id": "F01",
+    "spec": "product/stories/F01.md",
+    "assignment": "assignments/M02.md",
+    "acceptance": "Given A/B; When member A GET booking B; Then 404 и тело без PII. Revocation запрещает команды сразу после authoritative check, чтения ≤60 s.",
+    "screens": [
+      "login",
+      "team"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M02"
+  },
+  {
+    "id": "F02",
+    "spec": "product/stories/F02.md",
+    "assignment": "assignments/M03.md",
+    "acceptance": "Given rate 2500; When rate changes to 3000 after quote; Then existing quote uses 2500 until expiry.",
+    "screens": [
+      "catalog",
+      "rate"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M03"
+  },
+  {
+    "id": "F03",
+    "spec": "product/stories/F03.md",
+    "assignment": "assignments/M04.md",
+    "acceptance": "When 26 models with page limit 25; Then second cursor returns last item without duplicate. Availability never guarantees allocation.",
+    "screens": [
+      "catalog",
+      "availability"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M04"
+  },
+  {
+    "id": "F04",
+    "spec": "product/stories/F04.md",
+    "assignment": "assignments/M03.md",
+    "acceptance": "Given 25 h, qty2, rate2500, deposit10000 per unit; Then days2, rental10000, deposit20000, total authorization30000.",
+    "screens": [
+      "quote",
+      "checkout"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M03"
+  },
+  {
+    "id": "F05",
+    "spec": "product/stories/F05.md",
+    "assignment": "assignments/M05.md",
+    "acceptance": "Given one asset; When 100 unique bookings overlap; Then exactly 1 hold, 99 rejections, zero overlapping active allocations.",
+    "screens": [
+      "checkout",
+      "pending"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M05"
+  },
+  {
+    "id": "F06",
+    "spec": "product/stories/F06.md",
+    "assignment": "assignments/M07.md",
+    "acceptance": "Given authorization succeeds and allocation commits; Then one confirmed booking, one active allocation, one authorization; 10 duplicate events change none of these counts.",
+    "screens": [
+      "pending",
+      "booking"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M07"
+  },
+  {
+    "id": "F07",
+    "spec": "product/stories/F07.md",
+    "assignment": "assignments/M05.md",
+    "acceptance": "When retry 20 times after response loss; Then one booking and one operation; tenant B may reuse same key independently.",
+    "screens": [
+      "checkout"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M05"
+  },
+  {
+    "id": "F08",
+    "spec": "product/stories/F08.md",
+    "assignment": "assignments/M08.md",
+    "acceptance": "When cancel races allocation commit; Then terminal cancelled eventually has no active allocation and net captured0; timeout alone is not cancelled completion.",
+    "screens": [
+      "cancel",
+      "booking"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M08"
+  },
+  {
+    "id": "F09",
+    "spec": "product/stories/F09.md",
+    "assignment": "assignments/M09.md",
+    "acceptance": "When cancel and handover claim race; Then exactly one wins. Double handover returns original act; different payload ->409.",
+    "screens": [
+      "warehouse",
+      "handover"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M09"
+  },
+  {
+    "id": "F10",
+    "spec": "product/stories/F10.md",
+    "assignment": "assignments/M09.md",
+    "acceptance": "When return event delivered 10 times; Then one report, one release, one settlement; damaged asset not bookable until repair.",
+    "screens": [
+      "return",
+      "booking"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M09"
+  },
+  {
+    "id": "F11",
+    "spec": "product/stories/F11.md",
+    "assignment": "assignments/M10.md",
+    "acceptance": "Given authorized15000, rental5000, late2500, damage1000; Then capture8500 and void remaining6500, captured-refunded=8500.",
+    "screens": [
+      "billing",
+      "booking"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M10"
+  },
+  {
+    "id": "F12",
+    "spec": "product/stories/F12.md",
+    "assignment": "assignments/M10.md",
+    "acceptance": "When two concurrent full refunds; Then total refunded ≤ captured and one succeeds; second conflicts.",
+    "screens": [
+      "billing",
+      "refund"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M10"
+  },
+  {
+    "id": "F13",
+    "spec": "product/stories/F13.md",
+    "assignment": "assignments/M04.md",
+    "acceptance": "When maintenance period overlaps a committed booking; Then409 and no maintenance insert; after successful repair new hold is permitted.",
+    "screens": [
+      "fleet",
+      "maintenance"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M04"
+  },
+  {
+    "id": "F14",
+    "spec": "product/stories/F14.md",
+    "assignment": "assignments/M11.md",
+    "acceptance": "Given confirmed event duplicated; Then one UI notification; SSE reconnect recovers latest state; email failure leaves confirmed.",
+    "screens": [
+      "notifications",
+      "booking"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M11"
+  },
+  {
+    "id": "F15",
+    "spec": "product/stories/F15.md",
+    "assignment": "assignments/M12.md",
+    "acceptance": "When investigate failed booking; Then actor, before/after state, correlation and saga phase are recoverable; timeline rows unique by source event.",
+    "screens": [
+      "booking",
+      "audit"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M12"
+  },
+  {
+    "id": "F16",
+    "spec": "product/stories/F16.md",
+    "assignment": "assignments/M04.md",
+    "acceptance": "When two forms edit same asset at v3; Then first creates v4, second412 and cannot overwrite.",
+    "screens": [
+      "fleet",
+      "maintenance"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M04"
+  },
+  {
+    "id": "F17",
+    "spec": "product/stories/F17.md",
+    "assignment": "assignments/M13.md",
+    "acceptance": "Given old consumer fixture; When optional field added; Then both deserialize; breaking fixture rejected before release.",
+    "screens": [
+      "contracts"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M13"
+  },
+  {
+    "id": "F18",
+    "spec": "product/stories/F18.md",
+    "assignment": "assignments/M14.md",
+    "acceptance": "Given crash after DB commit before ACK; When restarted and replayed; Then one business effect and no lost transition.",
+    "screens": [
+      "operations"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M14"
+  },
+  {
+    "id": "F19",
+    "spec": "product/stories/F19.md",
+    "assignment": "assignments/M16.md",
+    "acceptance": "When deploy Notification only; Then six core service digests stay unchanged; rollback restores prior image without DB loss.",
+    "screens": [
+      "operations"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M16"
+  },
+  {
+    "id": "F20",
+    "spec": "product/stories/F20.md",
+    "assignment": "assignments/M17.md",
+    "acceptance": "When restore controlled checkpoint; Then known booking counts, ledger balance and allocation invariants match checkpoint; measured RTO≤30min and snapshot RPO≤24h.",
+    "screens": [
+      "operations"
+    ],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M17"
+  },
+  {
+    "id": "N01",
+    "spec": "requirements/nonfunctional.md",
+    "assignment": "assignments/M14.md",
+    "acceptance": "На lab-standard: 20 virtual users, 10 min after 2min warmup; read p95≤300ms, command acceptance p95≤500ms; saga completion p95≤5s при здоровом PSP; error<1% excluding expected409/422.",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M14"
+  },
+  {
+    "id": "N02",
+    "spec": "requirements/nonfunctional.md",
+    "assignment": "assignments/M08.md",
+    "acceptance": "100 concurrent overlapping bookings on one asset produce exactly one committed allocation. Zero overlap, overcapture and duplicate refund across 10k duplicate/reordered deliveries.",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M08"
+  },
+  {
+    "id": "N03",
+    "spec": "requirements/nonfunctional.md",
+    "assignment": "assignments/M02.md",
+    "acceptance": "Two organizations × all role/endpoint pairs; no foreign records, events, SSE or cache entries; 401/403/404 verified before access.",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M02"
+  },
+  {
+    "id": "N04",
+    "spec": "requirements/nonfunctional.md",
+    "assignment": "assignments/M14.md",
+    "acceptance": "Broker outage120s, consumer killed after DB commit beforeACK; pending saga reconciles ≤120s after recovery for 100 bookings; DLQ poison remains quarantined.",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M14"
+  },
+  {
+    "id": "N05",
+    "spec": "requirements/nonfunctional.md",
+    "assignment": "assignments/M12.md",
+    "acceptance": "100% synthetic test traces sampled; booking→outbox→consumer→PSP causality queryable; logs correlate; metrics have no booking/customer label.",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M12"
+  },
+  {
+    "id": "N06",
+    "spec": "requirements/nonfunctional.md",
+    "assignment": "assignments/M14.md",
+    "acceptance": "Lab SLO 99% successful eligible commands over 1h controlled run (denominator excludes auth/validation/conflict; includes dependency5xx). No claim about monthly production availability.",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M14"
+  },
+  {
+    "id": "N07",
+    "spec": "requirements/nonfunctional.md",
+    "assignment": "assignments/M15.md",
+    "acceptance": "TLS on ingress and internal production-like traffic, JWT issuer/audience/expiry checked, secrets absent repository/logs, least-privilege DB/broker roles; security scenario suite passes.",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M15"
+  },
+  {
+    "id": "N08",
+    "spec": "requirements/nonfunctional.md",
+    "assignment": "assignments/M16.md",
+    "acceptance": "Seven service images and DB migration streams; notification-only release changes no other digest; each service tests/builds/deploys without importing other business implementation.",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M16"
+  },
+  {
+    "id": "N09",
+    "spec": "requirements/nonfunctional.md",
+    "assignment": "assignments/M11.md",
+    "acceptance": "Keyboard complete customer checkout and operator return; visible focus; labels/errors; no color-only state; contrast normal text≥4.5:1; 360px without horizontal page scroll.",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M11"
+  },
+  {
+    "id": "N10",
+    "spec": "requirements/nonfunctional.md",
+    "assignment": "assignments/M17.md",
+    "acceptance": "Snapshot RPO target≤24h; measured isolated restore RTO≤30min for fixture dataset; reconnect mismatched service snapshots through reconcile, report unrecoverable delta.",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M17"
+  },
+  {
+    "id": "N11",
+    "spec": "requirements/nonfunctional.md",
+    "assignment": "assignments/M15.md",
+    "acceptance": "Synthetic users only; auth logs7d, telemetry7d, notifications30d, inbox/idempotency24h minimum with replay rules; booking/ledger retained for lab history; scrub demo emails on exports.",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M15"
+  },
+  {
+    "id": "N12",
+    "spec": "requirements/nonfunctional.md",
+    "assignment": "assignments/M18.md",
+    "acceptance": "Clean lab host builds pinned images/contracts; bootstrap docs checked by reviewer; no mandatory external cloud, CDN or paid integration.",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M18"
+  },
+  {
+    "id": "A01",
+    "spec": "reviews/engineering-audit.md",
+    "assignment": "assignments/M18.md",
+    "acceptance": "Audit gate row A01",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M18"
+  },
+  {
+    "id": "A02",
+    "spec": "reviews/engineering-audit.md",
+    "assignment": "assignments/M18.md",
+    "acceptance": "Audit gate row A02",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M18"
+  },
+  {
+    "id": "A03",
+    "spec": "reviews/engineering-audit.md",
+    "assignment": "assignments/M18.md",
+    "acceptance": "Audit gate row A03",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M18"
+  },
+  {
+    "id": "A04",
+    "spec": "reviews/engineering-audit.md",
+    "assignment": "assignments/M18.md",
+    "acceptance": "Audit gate row A04",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M18"
+  },
+  {
+    "id": "A05",
+    "spec": "reviews/engineering-audit.md",
+    "assignment": "assignments/M18.md",
+    "acceptance": "Audit gate row A05",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M18"
+  },
+  {
+    "id": "A06",
+    "spec": "reviews/engineering-audit.md",
+    "assignment": "assignments/M18.md",
+    "acceptance": "Audit gate row A06",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M18"
+  },
+  {
+    "id": "A07",
+    "spec": "reviews/engineering-audit.md",
+    "assignment": "assignments/M18.md",
+    "acceptance": "Audit gate row A07",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M18"
+  },
+  {
+    "id": "A08",
+    "spec": "reviews/engineering-audit.md",
+    "assignment": "assignments/M18.md",
+    "acceptance": "Audit gate row A08",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M18"
+  },
+  {
+    "id": "A09",
+    "spec": "reviews/engineering-audit.md",
+    "assignment": "assignments/M18.md",
+    "acceptance": "Audit gate row A09",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M18"
+  },
+  {
+    "id": "A10",
+    "spec": "reviews/engineering-audit.md",
+    "assignment": "assignments/M18.md",
+    "acceptance": "Audit gate row A10",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M18"
+  },
+  {
+    "id": "A11",
+    "spec": "reviews/engineering-audit.md",
+    "assignment": "assignments/M18.md",
+    "acceptance": "Audit gate row A11",
+    "screens": [],
+    "status": "specified; implementation unstarted",
+    "evidence": "student evidence/M18"
+  }
+]

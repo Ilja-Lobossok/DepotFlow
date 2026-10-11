@@ -1,0 +1,139 @@
+[
+  {
+    "id": "B01",
+    "section": "Роль / самостоятельность",
+    "files": [
+      "README.md",
+      "assignments/M01.md"
+    ],
+    "status": "Business implementation intentionally student-owned"
+  },
+  {
+    "id": "B02",
+    "section": "Исследование / выбор",
+    "files": [
+      "research/market-study.md",
+      "research/sources.json"
+    ],
+    "status": "Primary sources checked; expired jobs explicit"
+  },
+  {
+    "id": "B03",
+    "section": "Реальные микросервисы",
+    "files": [
+      "architecture/system-design.md",
+      "architecture/services.json"
+    ],
+    "status": "7business owners, private DB, independent deployment criteria"
+  },
+  {
+    "id": "B04",
+    "section": "PRD / бизнес-логика / stories",
+    "files": [
+      "product/PRD.md",
+      "product/business-processes.md",
+      "product/stories/F01.md"
+    ],
+    "status": "20full stories, precise states and acceptance"
+  },
+  {
+    "id": "B05",
+    "section": "System Design / contracts / distributed",
+    "files": [
+      "architecture/diagrams/index.json",
+      "contracts/README.md"
+    ],
+    "status": "43rendered SVG, 7OpenAPI+7AsyncAPI, fault mechanisms"
+  },
+  {
+    "id": "B06",
+    "section": "Стек и глубина",
+    "files": [
+      "architecture/technology-decisions.md",
+      "operations/fundamentals.md"
+    ],
+    "status": "Problem/alternative/limit/practice/proof for17technology groups"
+  },
+  {
+    "id": "B07",
+    "section": "Учебные задания",
+    "files": [
+      "assignments/milestones.json",
+      "reviews/reviewer-guide.md"
+    ],
+    "status": "18docs with all required sections"
+  },
+  {
+    "id": "B08",
+    "section": "UI/UX",
+    "files": [
+      "design/prototype.html",
+      "design/design-spec.md",
+      "design/screens.json"
+    ],
+    "status": "22responsive screens; role/journey/state controls"
+  },
+  {
+    "id": "B09",
+    "section": "Интерактивный атлас / roadmap",
+    "files": [
+      "atlas/index.html",
+      "roadmaps/tracks.json"
+    ],
+    "status": "12sections,15visual dependency tracks, local progress/export"
+  },
+  {
+    "id": "B10",
+    "section": "Engineering process",
+    "files": [
+      "operations/engineering-process.md",
+      "operations/templates/pull_request.md"
+    ],
+    "status": "Templates, ADR, migration, release, rollback, runbooks"
+  },
+  {
+    "id": "B11",
+    "section": "Финальный результат / audit",
+    "files": [
+      "reviews/engineering-audit.md",
+      "requirements/nonfunctional.md"
+    ],
+    "status": "11audit gates and quantitative lab thresholds"
+  },
+  {
+    "id": "B12",
+    "section": "Файлы / архив / исходники",
+    "files": [
+      "PROJECT_INDEX.md",
+      "tools/build_pack.py",
+      "exports/handbook.html"
+    ],
+    "status": "Local first; ZIP excludes validator dependencies"
+  },
+  {
+    "id": "B13",
+    "section": "Quality / coverage",
+    "files": [
+      "reviews/pack-quality.md",
+      "reviews/coverage.json"
+    ],
+    "status": "Pack QA separate from future runtime evidence"
+  },
+  {
+    "id": "B14",
+    "section": "Фазы A–F",
+    "files": [
+      "reviews/phase-register.md"
+    ],
+    "status": "Research/design/visual/assignments/packaging/audit recorded"
+  },
+  {
+    "id": "B15",
+    "section": "Учебный подход",
+    "files": [
+      "operations/fundamentals.md",
+      "operations/engineering-process.md"
+    ],
+    "status": "Explain→independent practice→review→errors→confirmation"
+  }
+]

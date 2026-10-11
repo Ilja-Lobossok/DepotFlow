@@ -1,0 +1,81 @@
+{
+  "title": "Security — identity is checked at every boundary",
+  "kind": "Security",
+  "width": 1240,
+  "height": 640,
+  "nodes": [
+    [
+      "browser",
+      "Client PKCE",
+      "JWT in memory; not roles authority",
+      35,
+      135,
+      285,
+      90
+    ],
+    [
+      "keycloak",
+      "Keycloak",
+      "Issuer / audience / expiry / JWKS",
+      420,
+      135,
+      310,
+      90
+    ],
+    [
+      "service",
+      "Business service",
+      "Tenant + resource + role check",
+      855,
+      135,
+      300,
+      90
+    ],
+    [
+      "tenancy",
+      "Tenancy authority",
+      "Mutation membership check; reads≤60s",
+      420,
+      390,
+      310,
+      90
+    ],
+    [
+      "resources",
+      "DB / broker / PSP",
+      "Own role • scoped ACL • callback HMAC",
+      855,
+      390,
+      300,
+      90
+    ]
+  ],
+  "edges": [
+    [
+      "browser",
+      "keycloak",
+      "authenticate"
+    ],
+    [
+      "browser",
+      "service",
+      "gateway JWT"
+    ],
+    [
+      "service",
+      "keycloak",
+      "verify key"
+    ],
+    [
+      "service",
+      "tenancy",
+      "authorize"
+    ],
+    [
+      "service",
+      "resources",
+      "least privilege"
+    ]
+  ],
+  "groups": []
+}

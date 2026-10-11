@@ -1,0 +1,270 @@
+{
+  "exchanges": [
+    {
+      "name": "depotflow.events",
+      "type": "topic",
+      "durable": true
+    },
+    {
+      "name": "depotflow.commands",
+      "type": "topic",
+      "durable": true
+    }
+  ],
+  "queues": [
+    {
+      "name": "q.catalog",
+      "durable": true,
+      "type": "quorum",
+      "bindings": [
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "catalog.changed.v1"
+        }
+      ],
+      "dead_letter_exchange": "depotflow.dlx",
+      "dead_letter_routing_key": "dlq.catalog",
+      "prefetch": 20,
+      "retry_delays_seconds": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "jitter": "full jitter",
+      "max_attempts": 5
+    },
+    {
+      "name": "q.inventory",
+      "durable": true,
+      "type": "quorum",
+      "bindings": [
+        {
+          "exchange": "depotflow.commands",
+          "routing_key": "booking.reserve-requested.v1"
+        },
+        {
+          "exchange": "depotflow.commands",
+          "routing_key": "booking.commit-requested.v1"
+        },
+        {
+          "exchange": "depotflow.commands",
+          "routing_key": "booking.release-requested.v1"
+        },
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "fulfillment.returned.v1"
+        },
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "fulfillment.handed-over.v1"
+        }
+      ],
+      "dead_letter_exchange": "depotflow.dlx",
+      "dead_letter_routing_key": "dlq.inventory",
+      "prefetch": 20,
+      "retry_delays_seconds": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "jitter": "full jitter",
+      "max_attempts": 5
+    },
+    {
+      "name": "q.booking",
+      "durable": true,
+      "type": "quorum",
+      "bindings": [
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "hold.created.v1"
+        },
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "hold.rejected.v1"
+        },
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "hold.expired.v1"
+        },
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "allocation.committed.v1"
+        },
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "allocation.released.v1"
+        },
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "payment.authorized.v1"
+        },
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "payment.failed.v1"
+        },
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "payment.voided.v1"
+        },
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "payment.captured.v1"
+        },
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "payment.refunded.v1"
+        },
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "fulfillment.handed-over.v1"
+        },
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "fulfillment.returned.v1"
+        },
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "asset.unavailable.v1"
+        }
+      ],
+      "dead_letter_exchange": "depotflow.dlx",
+      "dead_letter_routing_key": "dlq.booking",
+      "prefetch": 20,
+      "retry_delays_seconds": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "jitter": "full jitter",
+      "max_attempts": 5
+    },
+    {
+      "name": "q.billing",
+      "durable": true,
+      "type": "quorum",
+      "bindings": [
+        {
+          "exchange": "depotflow.commands",
+          "routing_key": "billing.authorize-requested.v1"
+        },
+        {
+          "exchange": "depotflow.commands",
+          "routing_key": "billing.void-requested.v1"
+        },
+        {
+          "exchange": "depotflow.commands",
+          "routing_key": "billing.settle-requested.v1"
+        }
+      ],
+      "dead_letter_exchange": "depotflow.dlx",
+      "dead_letter_routing_key": "dlq.billing",
+      "prefetch": 20,
+      "retry_delays_seconds": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "jitter": "full jitter",
+      "max_attempts": 5
+    },
+    {
+      "name": "q.fulfillment",
+      "durable": true,
+      "type": "quorum",
+      "bindings": [
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "booking.confirmed.v1"
+        },
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "booking.cancelled.v1"
+        },
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "asset.unavailable.v1"
+        }
+      ],
+      "dead_letter_exchange": "depotflow.dlx",
+      "dead_letter_routing_key": "dlq.fulfillment",
+      "prefetch": 20,
+      "retry_delays_seconds": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "jitter": "full jitter",
+      "max_attempts": 5
+    },
+    {
+      "name": "q.notification",
+      "durable": true,
+      "type": "quorum",
+      "bindings": [
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "booking.confirmed.v1"
+        },
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "booking.cancelled.v1"
+        },
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "fulfillment.returned.v1"
+        },
+        {
+          "exchange": "depotflow.events",
+          "routing_key": "payment.refunded.v1"
+        }
+      ],
+      "dead_letter_exchange": "depotflow.dlx",
+      "dead_letter_routing_key": "dlq.notification",
+      "prefetch": 20,
+      "retry_delays_seconds": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ],
+      "jitter": "full jitter",
+      "max_attempts": 5
+    }
+  ],
+  "dead_letter": {
+    "exchange": "depotflow.dlx",
+    "type": "direct",
+    "queues": [
+      "dlq.catalog",
+      "dlq.inventory",
+      "dlq.booking",
+      "dlq.billing",
+      "dlq.fulfillment",
+      "dlq.notification"
+    ],
+    "durable": true
+  },
+  "publisher": {
+    "persistent": true,
+    "mandatory": true,
+    "confirms": true
+  },
+  "consumer": {
+    "ack": "after inbox+business+outbox transaction commits",
+    "dedupe": "consumer+event_id",
+    "replay": "preserve event_id and original metadata"
+  },
+  "note": "One node local not HA; 3node quorum lab only. Return/confirm does not mean consumer business processing completed. Retry worker publishes with confirms before ACK; never immediate requeue infinite loop."
+}

@@ -1,0 +1,22 @@
+{
+  "owner": "catalog",
+  "tables": {
+    "models": "id, org_id, name, category, active, version",
+    "rates": "id, org_id, model_id, daily_minor, deposit_minor, currency, valid_from, version",
+    "quotes": "id, org_id, model_id, depot_id, start_at, end_at, quantity, days, daily_minor, rental_minor, deposit_minor, currency, expires_at, rate_version"
+  },
+  "relations": [
+    [
+      "models",
+      "rates",
+      "1 : many model_id"
+    ],
+    [
+      "models",
+      "quotes",
+      "1 : many model_id"
+    ]
+  ],
+  "width": 1320,
+  "height": 790
+}

@@ -1,0 +1,9 @@
+# Reviewer guide
+
+Do not accept a feature solely because endpoint returns200. Check owner state, actual foreign-data denial, stable retry identity and independent artifact. Every milestone has reviewer questions; answers deliberately not supplied so student must reason. Ask transaction boundary: what happened if crash one instruction earlier/later? Which state could be unknown? Who owns correction? What proof supports the claim?
+
+Typical errors: shared ORM tables masquerade as microservices; gateway auth only; availability query used as final lock; preACK before DB commit; outbox row marked before confirm; discard every low-version event and miss late auth void; Redis expiry mistaken for business release; cancelling handover claim on TTL despite physical action; generated enum rejects additive event; image rollback after schema drop; source token in trace; pod readiness cited as restore proof.
+
+Technical probes: contrast Read Committed and serializable write skew; show range constraint; explain PSP response-loss and provider key; explain duplicate business effect vs external email; draw consumer transaction; trace wrong tenant header; debug partial restore; explain p95/error denominator; show an actual independent Notification deploy with six unchanged images. Change requirements mid-review: partial return, multi-currency, depot transfer, rate update during quote, provider authorization expiry. Ask student which contract/state/ADR/migration changes first and which old consumer still runs.
+
+Grading: pass only when reproducible evidence meets all required criteria; failed integrity/security blocks stage. Performance miss requires profile/tune or explicit reviewer-approved environment adjustment with rerun; no silent lowered threshold. Optional tasks never compensate for missing core. Review record requires requirement ID, evidence path, reviewer, date, verdict and limitation.

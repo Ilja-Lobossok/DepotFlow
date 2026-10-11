@@ -1,0 +1,258 @@
+{
+  "title": "Project roadmap — all 18 prerequisites",
+  "kind": "Roadmap",
+  "width": 1250,
+  "height": 1400,
+  "nodes": [
+    [
+      "M01",
+      "M01 • Lab foundations",
+      "Linux, networking, Docker, Git",
+      40,
+      120,
+      350,
+      95
+    ],
+    [
+      "M02",
+      "M02 • Identity & tenant boundarie",
+      "OIDC, JWT, RBAC",
+      440,
+      120,
+      350,
+      95
+    ],
+    [
+      "M03",
+      "M03 • Catalog & pricing",
+      "Java, REST, SQL, unit testing",
+      840,
+      120,
+      350,
+      95
+    ],
+    [
+      "M04",
+      "M04 • Inventory integrity",
+      "SQL locks/MVCC, PostgreSQL ranges",
+      840,
+      320,
+      350,
+      95
+    ],
+    [
+      "M05",
+      "M05 • Booking commands & idempote",
+      "API operations, transactions",
+      440,
+      320,
+      350,
+      95
+    ],
+    [
+      "M06",
+      "M06 • Messaging & contract gates",
+      "AMQP, event schemas, outbox/inbox",
+      40,
+      320,
+      350,
+      95
+    ],
+    [
+      "M07",
+      "M07 • Sandbox billing & confirmat",
+      "Saga, payment idempotency",
+      40,
+      520,
+      350,
+      95
+    ],
+    [
+      "M08",
+      "M08 • Cancellation & races",
+      "Compensation, event ordering",
+      440,
+      520,
+      350,
+      95
+    ],
+    [
+      "M09",
+      "M09 • Warehouse physical workflow",
+      "Fencing, frontend forms",
+      840,
+      520,
+      350,
+      95
+    ],
+    [
+      "M10",
+      "M10 • Settlement & refunds",
+      "Financial invariants, reservations",
+      840,
+      720,
+      350,
+      95
+    ],
+    [
+      "M11",
+      "M11 • Product frontend & notifica",
+      "React, accessibility, Redis, SSE",
+      440,
+      720,
+      350,
+      95
+    ],
+    [
+      "M12",
+      "M12 • Observability & incident di",
+      "Tracing, metrics/logs, SLO",
+      40,
+      720,
+      350,
+      95
+    ],
+    [
+      "M13",
+      "M13 • Contracts, migrations & CI",
+      "Compatibility, CI DAG, supply chain",
+      40,
+      920,
+      350,
+      95
+    ],
+    [
+      "M14",
+      "M14 • Reliability & performance l",
+      "k6, controlled fault injection",
+      440,
+      920,
+      350,
+      95
+    ],
+    [
+      "M15",
+      "M15 • Production-like Kubernetes ",
+      "Docker, networks, Kubernetes, Helm",
+      840,
+      920,
+      350,
+      95
+    ],
+    [
+      "M16",
+      "M16 • Independent delivery & roll",
+      "CI/CD, rollout, signed digest",
+      840,
+      1120,
+      350,
+      95
+    ],
+    [
+      "M17",
+      "M17 • IaC, backup & restore",
+      "OpenTofu, Ansible, storage/reconciliatio",
+      440,
+      1120,
+      350,
+      95
+    ],
+    [
+      "M18",
+      "M18 • Engineering audit & archite",
+      "All prior evidence",
+      40,
+      1120,
+      350,
+      95
+    ]
+  ],
+  "edges": [
+    [
+      "M01",
+      "M02",
+      "prerequisite"
+    ],
+    [
+      "M02",
+      "M03",
+      "prerequisite"
+    ],
+    [
+      "M03",
+      "M04",
+      "prerequisite"
+    ],
+    [
+      "M04",
+      "M05",
+      "prerequisite"
+    ],
+    [
+      "M05",
+      "M06",
+      "prerequisite"
+    ],
+    [
+      "M06",
+      "M07",
+      "prerequisite"
+    ],
+    [
+      "M07",
+      "M08",
+      "prerequisite"
+    ],
+    [
+      "M08",
+      "M09",
+      "prerequisite"
+    ],
+    [
+      "M09",
+      "M10",
+      "prerequisite"
+    ],
+    [
+      "M10",
+      "M11",
+      "prerequisite"
+    ],
+    [
+      "M11",
+      "M12",
+      "prerequisite"
+    ],
+    [
+      "M12",
+      "M13",
+      "prerequisite"
+    ],
+    [
+      "M13",
+      "M14",
+      "prerequisite"
+    ],
+    [
+      "M14",
+      "M15",
+      "prerequisite"
+    ],
+    [
+      "M15",
+      "M16",
+      "prerequisite"
+    ],
+    [
+      "M16",
+      "M17",
+      "prerequisite"
+    ],
+    [
+      "M17",
+      "M18",
+      "prerequisite"
+    ]
+  ],
+  "groups": []
+}

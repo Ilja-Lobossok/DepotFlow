@@ -1,0 +1,636 @@
+[
+  {
+    "name": "Project",
+    "slug": "project",
+    "nodes": [
+      {
+        "milestone": "M01",
+        "label": "Изолированная среда",
+        "practice": "Lab foundations",
+        "proof": "One independent build per service; no shared DB role; dependency health evidence",
+        "depends": []
+      },
+      {
+        "milestone": "M04",
+        "label": "Целостность ресурсов",
+        "practice": "Inventory integrity",
+        "proof": "100 simultaneous overlapping requests on one unit produce1hold; all-or-nothing qty5",
+        "depends": [
+          "M03"
+        ]
+      },
+      {
+        "milestone": "M08",
+        "label": "Saga компенсации",
+        "practice": "Cancellation & races",
+        "proof": "100 runs each race: no cancelled active allocation/net captured; completion≤120s after recovery",
+        "depends": [
+          "M07"
+        ]
+      },
+      {
+        "milestone": "M11",
+        "label": "Полный интерфейс",
+        "practice": "Product frontend & notifications",
+        "proof": "360px no page overflow; duplicate fact one notification; fresh quote bypasses cache",
+        "depends": [
+          "M10"
+        ]
+      },
+      {
+        "milestone": "M14",
+        "label": "Отказная лаборатория",
+        "practice": "Reliability & performance laboratory",
+        "proof": "20VU read p95≤300ms command≤500ms saga≤5s healthy; recovery100 bookings≤120s",
+        "depends": [
+          "M13"
+        ]
+      },
+      {
+        "milestone": "M18",
+        "label": "Защита",
+        "practice": "Engineering audit & architecture defense",
+        "proof": "Every requirement evidence link resolves; reviewer independently runs critical races/recovery",
+        "depends": [
+          "M17"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Backend Engineering",
+    "slug": "backend-engineering",
+    "nodes": [
+      {
+        "milestone": "M01",
+        "label": "HTTP/JVM fundamentals",
+        "practice": "Lab foundations",
+        "proof": "One independent build per service; no shared DB role; dependency health evidence",
+        "depends": []
+      },
+      {
+        "milestone": "M03",
+        "label": "Неизменяемая котировка",
+        "practice": "Catalog & pricing",
+        "proof": "25h quote calculates10000 rental+20000 deposit; expired quote422",
+        "depends": [
+          "M02"
+        ]
+      },
+      {
+        "milestone": "M05",
+        "label": "Durable commands",
+        "practice": "Booking commands & idempotency",
+        "proof": "20 repeats create1booking; different tenant same key works",
+        "depends": [
+          "M04"
+        ]
+      },
+      {
+        "milestone": "M07",
+        "label": "Saga + sandbox adapter",
+        "practice": "Sandbox billing & confirmation saga",
+        "proof": "Unknown reconciled by same key; expired hold never committed; one auth",
+        "depends": [
+          "M06"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Frontend Engineering",
+    "slug": "frontend-engineering",
+    "nodes": [
+      {
+        "milestone": "M02",
+        "label": "Auth/access routes",
+        "practice": "Identity & tenant boundaries",
+        "proof": "401 invalid token;403 forbidden own command;404 foreign object; mutations revoke immediately",
+        "depends": [
+          "M01"
+        ]
+      },
+      {
+        "milestone": "M05",
+        "label": "Pending server state",
+        "practice": "Booking commands & idempotency",
+        "proof": "20 repeats create1booking; different tenant same key works",
+        "depends": [
+          "M04"
+        ]
+      },
+      {
+        "milestone": "M09",
+        "label": "Warehouse forms",
+        "practice": "Warehouse physical workflow",
+        "proof": "Cancel/handover exactly one winner; double return one report; absent asset not handed over",
+        "depends": [
+          "M08"
+        ]
+      },
+      {
+        "milestone": "M11",
+        "label": "Accessible E2E",
+        "practice": "Product frontend & notifications",
+        "proof": "360px no page overflow; duplicate fact one notification; fresh quote bypasses cache",
+        "depends": [
+          "M10"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Databases",
+    "slug": "databases",
+    "nodes": [
+      {
+        "milestone": "M03",
+        "label": "Модель/migration",
+        "practice": "Catalog & pricing",
+        "proof": "25h quote calculates10000 rental+20000 deposit; expired quote422",
+        "depends": [
+          "M02"
+        ]
+      },
+      {
+        "milestone": "M04",
+        "label": "Locks & plans",
+        "practice": "Inventory integrity",
+        "proof": "100 simultaneous overlapping requests on one unit produce1hold; all-or-nothing qty5",
+        "depends": [
+          "M03"
+        ]
+      },
+      {
+        "milestone": "M10",
+        "label": "Ledger invariants",
+        "practice": "Settlement & refunds",
+        "proof": "15000 auth example yields8500 capture; two full refunds never overrefund",
+        "depends": [
+          "M09"
+        ]
+      },
+      {
+        "milestone": "M17",
+        "label": "Restore verification",
+        "practice": "IaC, backup & restore",
+        "proof": "Second Ansible run unchanged; restore≤30min fixture, delta known; no credentials in state repo",
+        "depends": [
+          "M16"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Distributed Systems",
+    "slug": "distributed-systems",
+    "nodes": [
+      {
+        "milestone": "M05",
+        "label": "Operation identity",
+        "practice": "Booking commands & idempotency",
+        "proof": "20 repeats create1booking; different tenant same key works",
+        "depends": [
+          "M04"
+        ]
+      },
+      {
+        "milestone": "M06",
+        "label": "Outbox/inbox",
+        "practice": "Messaging & contract gates",
+        "proof": "At least10 duplicate deliveries yield one effect; poison schema→DLQ with original metadata",
+        "depends": [
+          "M05"
+        ]
+      },
+      {
+        "milestone": "M08",
+        "label": "Compensation races",
+        "practice": "Cancellation & races",
+        "proof": "100 runs each race: no cancelled active allocation/net captured; completion≤120s after recovery",
+        "depends": [
+          "M07"
+        ]
+      },
+      {
+        "milestone": "M14",
+        "label": "Fault evidence",
+        "practice": "Reliability & performance laboratory",
+        "proof": "20VU read p95≤300ms command≤500ms saga≤5s healthy; recovery100 bookings≤120s",
+        "depends": [
+          "M13"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Redis & Caching",
+    "slug": "redis-caching",
+    "nodes": [
+      {
+        "milestone": "M03",
+        "label": "Authoritative quote first",
+        "practice": "Catalog & pricing",
+        "proof": "25h quote calculates10000 rental+20000 deposit; expired quote422",
+        "depends": [
+          "M02"
+        ]
+      },
+      {
+        "milestone": "M11",
+        "label": "Cache-aside + invalidation",
+        "practice": "Product frontend & notifications",
+        "proof": "360px no page overflow; duplicate fact one notification; fresh quote bypasses cache",
+        "depends": [
+          "M10"
+        ]
+      },
+      {
+        "milestone": "M14",
+        "label": "Eviction/outage experiment",
+        "practice": "Reliability & performance laboratory",
+        "proof": "20VU read p95≤300ms command≤500ms saga≤5s healthy; recovery100 bookings≤120s",
+        "depends": [
+          "M13"
+        ]
+      },
+      {
+        "milestone": "M15",
+        "label": "Bounded production config",
+        "practice": "Production-like Kubernetes & security",
+        "proof": "Old pods drain30s; own migration job; wrong DB role denied; rollout maintains invariants",
+        "depends": [
+          "M14"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Message Brokers",
+    "slug": "message-brokers",
+    "nodes": [
+      {
+        "milestone": "M05",
+        "label": "Contracts",
+        "practice": "Booking commands & idempotency",
+        "proof": "20 repeats create1booking; different tenant same key works",
+        "depends": [
+          "M04"
+        ]
+      },
+      {
+        "milestone": "M06",
+        "label": "Rabbit confirms/ack",
+        "practice": "Messaging & contract gates",
+        "proof": "At least10 duplicate deliveries yield one effect; poison schema→DLQ with original metadata",
+        "depends": [
+          "M05"
+        ]
+      },
+      {
+        "milestone": "M08",
+        "label": "Late events + DLQ",
+        "practice": "Cancellation & races",
+        "proof": "100 runs each race: no cancelled active allocation/net captured; completion≤120s after recovery",
+        "depends": [
+          "M07"
+        ]
+      },
+      {
+        "milestone": "M14",
+        "label": "Kafka compare/rebalance",
+        "practice": "Reliability & performance laboratory",
+        "proof": "20VU read p95≤300ms command≤500ms saga≤5s healthy; recovery100 bookings≤120s",
+        "depends": [
+          "M13"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Linux & Networking",
+    "slug": "linux-networking",
+    "nodes": [
+      {
+        "milestone": "M01",
+        "label": "Processes/sockets/DNS",
+        "practice": "Lab foundations",
+        "proof": "One independent build per service; no shared DB role; dependency health evidence",
+        "depends": []
+      },
+      {
+        "milestone": "M02",
+        "label": "TLS/auth",
+        "practice": "Identity & tenant boundaries",
+        "proof": "401 invalid token;403 forbidden own command;404 foreign object; mutations revoke immediately",
+        "depends": [
+          "M01"
+        ]
+      },
+      {
+        "milestone": "M12",
+        "label": "Trace network failure",
+        "practice": "Observability & incident diagnosis",
+        "proof": "Trace links across all saga edges; no high-cardinality booking metric label",
+        "depends": [
+          "M11"
+        ]
+      },
+      {
+        "milestone": "M15",
+        "label": "Network policies",
+        "practice": "Production-like Kubernetes & security",
+        "proof": "Old pods drain30s; own migration job; wrong DB role denied; rollout maintains invariants",
+        "depends": [
+          "M14"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Docker & Kubernetes",
+    "slug": "docker-kubernetes",
+    "nodes": [
+      {
+        "milestone": "M01",
+        "label": "Images/volumes",
+        "practice": "Lab foundations",
+        "proof": "One independent build per service; no shared DB role; dependency health evidence",
+        "depends": []
+      },
+      {
+        "milestone": "M13",
+        "label": "Independent builds",
+        "practice": "Contracts, migrations & CI",
+        "proof": "Old consumer passes additive schema; breaking change blocked; previous migration upgrade works",
+        "depends": [
+          "M12"
+        ]
+      },
+      {
+        "milestone": "M15",
+        "label": "Probes/limits",
+        "practice": "Production-like Kubernetes & security",
+        "proof": "Old pods drain30s; own migration job; wrong DB role denied; rollout maintains invariants",
+        "depends": [
+          "M14"
+        ]
+      },
+      {
+        "milestone": "M16",
+        "label": "Rollout/rollback",
+        "practice": "Independent delivery & rollback",
+        "proof": "Notification-only diff; failed update leaves working pods; revert image retains schema compatibility",
+        "depends": [
+          "M15"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CI-CD & IaC",
+    "slug": "ci-cd-iac",
+    "nodes": [
+      {
+        "milestone": "M01",
+        "label": "Git/reproducibility",
+        "practice": "Lab foundations",
+        "proof": "One independent build per service; no shared DB role; dependency health evidence",
+        "depends": []
+      },
+      {
+        "milestone": "M13",
+        "label": "Check DAG",
+        "practice": "Contracts, migrations & CI",
+        "proof": "Old consumer passes additive schema; breaking change blocked; previous migration upgrade works",
+        "depends": [
+          "M12"
+        ]
+      },
+      {
+        "milestone": "M16",
+        "label": "Per-service release",
+        "practice": "Independent delivery & rollback",
+        "proof": "Notification-only diff; failed update leaves working pods; revert image retains schema compatibility",
+        "depends": [
+          "M15"
+        ]
+      },
+      {
+        "milestone": "M17",
+        "label": "State/drift/convergence",
+        "practice": "IaC, backup & restore",
+        "proof": "Second Ansible run unchanged; restore≤30min fixture, delta known; no credentials in state repo",
+        "depends": [
+          "M16"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cloud",
+    "slug": "cloud",
+    "nodes": [
+      {
+        "milestone": "M01",
+        "label": "Local environment baseline",
+        "practice": "Lab foundations",
+        "proof": "One independent build per service; no shared DB role; dependency health evidence",
+        "depends": []
+      },
+      {
+        "milestone": "M15",
+        "label": "Trust/network topology",
+        "practice": "Production-like Kubernetes & security",
+        "proof": "Old pods drain30s; own migration job; wrong DB role denied; rollout maintains invariants",
+        "depends": [
+          "M14"
+        ]
+      },
+      {
+        "milestone": "M17",
+        "label": "Plan/budget or local equivalent",
+        "practice": "IaC, backup & restore",
+        "proof": "Second Ansible run unchanged; restore≤30min fixture, delta known; no credentials in state repo",
+        "depends": [
+          "M16"
+        ]
+      },
+      {
+        "milestone": "M18",
+        "label": "Defend failure domain",
+        "practice": "Engineering audit & architecture defense",
+        "proof": "Every requirement evidence link resolves; reviewer independently runs critical races/recovery",
+        "depends": [
+          "M17"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Observability",
+    "slug": "observability",
+    "nodes": [
+      {
+        "milestone": "M05",
+        "label": "Correlation IDs",
+        "practice": "Booking commands & idempotency",
+        "proof": "20 repeats create1booking; different tenant same key works",
+        "depends": [
+          "M04"
+        ]
+      },
+      {
+        "milestone": "M06",
+        "label": "Async trace context",
+        "practice": "Messaging & contract gates",
+        "proof": "At least10 duplicate deliveries yield one effect; poison schema→DLQ with original metadata",
+        "depends": [
+          "M05"
+        ]
+      },
+      {
+        "milestone": "M12",
+        "label": "Dashboards/alerts",
+        "practice": "Observability & incident diagnosis",
+        "proof": "Trace links across all saga edges; no high-cardinality booking metric label",
+        "depends": [
+          "M11"
+        ]
+      },
+      {
+        "milestone": "M14",
+        "label": "Incident & SLO evidence",
+        "practice": "Reliability & performance laboratory",
+        "proof": "20VU read p95≤300ms command≤500ms saga≤5s healthy; recovery100 bookings≤120s",
+        "depends": [
+          "M13"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Security",
+    "slug": "security",
+    "nodes": [
+      {
+        "milestone": "M02",
+        "label": "Tenant/role controls",
+        "practice": "Identity & tenant boundaries",
+        "proof": "401 invalid token;403 forbidden own command;404 foreign object; mutations revoke immediately",
+        "depends": [
+          "M01"
+        ]
+      },
+      {
+        "milestone": "M10",
+        "label": "Signed webhooks",
+        "practice": "Settlement & refunds",
+        "proof": "15000 auth example yields8500 capture; two full refunds never overrefund",
+        "depends": [
+          "M09"
+        ]
+      },
+      {
+        "milestone": "M13",
+        "label": "Dependency/supply chain",
+        "practice": "Contracts, migrations & CI",
+        "proof": "Old consumer passes additive schema; breaking change blocked; previous migration upgrade works",
+        "depends": [
+          "M12"
+        ]
+      },
+      {
+        "milestone": "M15",
+        "label": "TLS/network attacks",
+        "practice": "Production-like Kubernetes & security",
+        "proof": "Old pods drain30s; own migration job; wrong DB role denied; rollout maintains invariants",
+        "depends": [
+          "M14"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Testing Performance Reliability",
+    "slug": "testing-performance-reliability",
+    "nodes": [
+      {
+        "milestone": "M03",
+        "label": "Pure vs integration",
+        "practice": "Catalog & pricing",
+        "proof": "25h quote calculates10000 rental+20000 deposit; expired quote422",
+        "depends": [
+          "M02"
+        ]
+      },
+      {
+        "milestone": "M06",
+        "label": "Contract/crash testing",
+        "practice": "Messaging & contract gates",
+        "proof": "At least10 duplicate deliveries yield one effect; poison schema→DLQ with original metadata",
+        "depends": [
+          "M05"
+        ]
+      },
+      {
+        "milestone": "M14",
+        "label": "Load+fault experiments",
+        "practice": "Reliability & performance laboratory",
+        "proof": "20VU read p95≤300ms command≤500ms saga≤5s healthy; recovery100 bookings≤120s",
+        "depends": [
+          "M13"
+        ]
+      },
+      {
+        "milestone": "M17",
+        "label": "Timed recovery",
+        "practice": "IaC, backup & restore",
+        "proof": "Second Ansible run unchanged; restore≤30min fixture, delta known; no credentials in state repo",
+        "depends": [
+          "M16"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "System Design",
+    "slug": "system-design",
+    "nodes": [
+      {
+        "milestone": "M01",
+        "label": "Boundaries & ADR",
+        "practice": "Lab foundations",
+        "proof": "One independent build per service; no shared DB role; dependency health evidence",
+        "depends": []
+      },
+      {
+        "milestone": "M04",
+        "label": "Strong local invariants",
+        "practice": "Inventory integrity",
+        "proof": "100 simultaneous overlapping requests on one unit produce1hold; all-or-nothing qty5",
+        "depends": [
+          "M03"
+        ]
+      },
+      {
+        "milestone": "M08",
+        "label": "Eventual consistency costs",
+        "practice": "Cancellation & races",
+        "proof": "100 runs each race: no cancelled active allocation/net captured; completion≤120s after recovery",
+        "depends": [
+          "M07"
+        ]
+      },
+      {
+        "milestone": "M18",
+        "label": "Architecture defense",
+        "practice": "Engineering audit & architecture defense",
+        "proof": "Every requirement evidence link resolves; reviewer independently runs critical races/recovery",
+        "depends": [
+          "M17"
+        ]
+      }
+    ]
+  }
+]

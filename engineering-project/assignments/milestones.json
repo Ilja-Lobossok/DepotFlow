@@ -1,0 +1,228 @@
+[
+  {
+    "id": "M01",
+    "title": "Lab foundations",
+    "skills": "Linux, networking, Docker, Git",
+    "depends": [],
+    "requirements": [],
+    "acceptance": "One independent build per service; no shared DB role; dependency health evidence"
+  },
+  {
+    "id": "M02",
+    "title": "Identity & tenant boundaries",
+    "skills": "OIDC, JWT, RBAC",
+    "depends": [
+      "M01"
+    ],
+    "requirements": [
+      "F01",
+      "N03"
+    ],
+    "acceptance": "401 invalid token;403 forbidden own command;404 foreign object; mutations revoke immediately"
+  },
+  {
+    "id": "M03",
+    "title": "Catalog & pricing",
+    "skills": "Java, REST, SQL, unit testing",
+    "depends": [
+      "M02"
+    ],
+    "requirements": [
+      "F02",
+      "F04"
+    ],
+    "acceptance": "25h quote calculates10000 rental+20000 deposit; expired quote422"
+  },
+  {
+    "id": "M04",
+    "title": "Inventory integrity",
+    "skills": "SQL locks/MVCC, PostgreSQL ranges",
+    "depends": [
+      "M03"
+    ],
+    "requirements": [
+      "F03",
+      "F13",
+      "F16"
+    ],
+    "acceptance": "100 simultaneous overlapping requests on one unit produce1hold; all-or-nothing qty5"
+  },
+  {
+    "id": "M05",
+    "title": "Booking commands & idempotency",
+    "skills": "API operations, transactions",
+    "depends": [
+      "M04"
+    ],
+    "requirements": [
+      "F05",
+      "F07"
+    ],
+    "acceptance": "20 repeats create1booking; different tenant same key works"
+  },
+  {
+    "id": "M06",
+    "title": "Messaging & contract gates",
+    "skills": "AMQP, event schemas, outbox/inbox",
+    "depends": [
+      "M05"
+    ],
+    "requirements": [],
+    "acceptance": "At least10 duplicate deliveries yield one effect; poison schema→DLQ with original metadata"
+  },
+  {
+    "id": "M07",
+    "title": "Sandbox billing & confirmation saga",
+    "skills": "Saga, payment idempotency",
+    "depends": [
+      "M06"
+    ],
+    "requirements": [
+      "F06"
+    ],
+    "acceptance": "Unknown reconciled by same key; expired hold never committed; one auth"
+  },
+  {
+    "id": "M08",
+    "title": "Cancellation & races",
+    "skills": "Compensation, event ordering",
+    "depends": [
+      "M07"
+    ],
+    "requirements": [
+      "F08",
+      "N02"
+    ],
+    "acceptance": "100 runs each race: no cancelled active allocation/net captured; completion≤120s after recovery"
+  },
+  {
+    "id": "M09",
+    "title": "Warehouse physical workflow",
+    "skills": "Fencing, frontend forms",
+    "depends": [
+      "M08"
+    ],
+    "requirements": [
+      "F09",
+      "F10"
+    ],
+    "acceptance": "Cancel/handover exactly one winner; double return one report; absent asset not handed over"
+  },
+  {
+    "id": "M10",
+    "title": "Settlement & refunds",
+    "skills": "Financial invariants, reservations",
+    "depends": [
+      "M09"
+    ],
+    "requirements": [
+      "F11",
+      "F12"
+    ],
+    "acceptance": "15000 auth example yields8500 capture; two full refunds never overrefund"
+  },
+  {
+    "id": "M11",
+    "title": "Product frontend & notifications",
+    "skills": "React, accessibility, Redis, SSE",
+    "depends": [
+      "M10"
+    ],
+    "requirements": [
+      "F14",
+      "N09"
+    ],
+    "acceptance": "360px no page overflow; duplicate fact one notification; fresh quote bypasses cache"
+  },
+  {
+    "id": "M12",
+    "title": "Observability & incident diagnosis",
+    "skills": "Tracing, metrics/logs, SLO",
+    "depends": [
+      "M11"
+    ],
+    "requirements": [
+      "F15",
+      "N05"
+    ],
+    "acceptance": "Trace links across all saga edges; no high-cardinality booking metric label"
+  },
+  {
+    "id": "M13",
+    "title": "Contracts, migrations & CI",
+    "skills": "Compatibility, CI DAG, supply chain",
+    "depends": [
+      "M12"
+    ],
+    "requirements": [
+      "F17"
+    ],
+    "acceptance": "Old consumer passes additive schema; breaking change blocked; previous migration upgrade works"
+  },
+  {
+    "id": "M14",
+    "title": "Reliability & performance laboratory",
+    "skills": "k6, controlled fault injection",
+    "depends": [
+      "M13"
+    ],
+    "requirements": [
+      "F18",
+      "N01",
+      "N04",
+      "N06"
+    ],
+    "acceptance": "20VU read p95≤300ms command≤500ms saga≤5s healthy; recovery100 bookings≤120s"
+  },
+  {
+    "id": "M15",
+    "title": "Production-like Kubernetes & security",
+    "skills": "Docker, networks, Kubernetes, Helm",
+    "depends": [
+      "M14"
+    ],
+    "requirements": [
+      "N07",
+      "N11"
+    ],
+    "acceptance": "Old pods drain30s; own migration job; wrong DB role denied; rollout maintains invariants"
+  },
+  {
+    "id": "M16",
+    "title": "Independent delivery & rollback",
+    "skills": "CI/CD, rollout, signed digest",
+    "depends": [
+      "M15"
+    ],
+    "requirements": [
+      "F19",
+      "N08"
+    ],
+    "acceptance": "Notification-only diff; failed update leaves working pods; revert image retains schema compatibility"
+  },
+  {
+    "id": "M17",
+    "title": "IaC, backup & restore",
+    "skills": "OpenTofu, Ansible, storage/reconciliation",
+    "depends": [
+      "M16"
+    ],
+    "requirements": [
+      "F20",
+      "N10"
+    ],
+    "acceptance": "Second Ansible run unchanged; restore≤30min fixture, delta known; no credentials in state repo"
+  },
+  {
+    "id": "M18",
+    "title": "Engineering audit & architecture defense",
+    "skills": "All prior evidence",
+    "depends": [
+      "M17"
+    ],
+    "requirements": [
+      "N12"
+    ],
+    "acceptance": "Every requirement evidence link resolves; reviewer independently runs critical races/recovery"
+  }
+]

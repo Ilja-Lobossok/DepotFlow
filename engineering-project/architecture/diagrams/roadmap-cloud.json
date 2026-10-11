@@ -1,0 +1,62 @@
+{
+  "title": "Cloud roadmap",
+  "kind": "Roadmap",
+  "width": 1250,
+  "height": 700,
+  "nodes": [
+    [
+      "M01",
+      "M01 • Local environment base",
+      "Lab foundations|Proof in assignment",
+      40,
+      125,
+      350,
+      95
+    ],
+    [
+      "M15",
+      "M15 • Trust/network topology",
+      "Production-like Kubernetes & secu|Proof in assignment",
+      440,
+      125,
+      350,
+      95
+    ],
+    [
+      "M17",
+      "M17 • Plan/budget or local e",
+      "IaC, backup & restore|Proof in assignment",
+      840,
+      125,
+      350,
+      95
+    ],
+    [
+      "M18",
+      "M18 • Defend failure domain",
+      "Engineering audit & architecture |Proof in assignment",
+      40,
+      365,
+      350,
+      95
+    ]
+  ],
+  "edges": [
+    [
+      "M01",
+      "M15",
+      "next checkpoint"
+    ],
+    [
+      "M15",
+      "M17",
+      "next checkpoint"
+    ],
+    [
+      "M17",
+      "M18",
+      "next checkpoint"
+    ]
+  ],
+  "groups": []
+}

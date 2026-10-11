@@ -1,0 +1,22 @@
+{
+  "owner": "booking",
+  "tables": {
+    "bookings": "id, org_id, customer_id, quote_id, quote_snapshot, status, version, created_at",
+    "sagas": "id, org_id, booking_id, phase, deadline_at, cancel_requested, version",
+    "timeline_entries": "id, org_id, booking_id, source_event_id, type, at"
+  },
+  "relations": [
+    [
+      "bookings",
+      "sagas",
+      "1 : 1 booking_id"
+    ],
+    [
+      "bookings",
+      "timeline_entries",
+      "1 : many booking_id"
+    ]
+  ],
+  "width": 1320,
+  "height": 790
+}

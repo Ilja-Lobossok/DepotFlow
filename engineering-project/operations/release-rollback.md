@@ -1,0 +1,7 @@
+# Release and rollback runbook
+
+Owner: implementing engineer; reviewer verifies evidence. Trigger: per-service change with tests and contract compatibility accepted. Record environment, previous and new digest, migration version, UTC start, operator, backup checkpoint. Precheck previous consumer runs expanded schema, image SBOM scan no untriaged critical issues, essential secrets mounted, no destructive migration. Migration job completes once for owner; failure halts rollout and preserves previous image.
+
+Deploy one service digest. Check readiness and smoke commands through gateway with synthetic org; examine eligible error rate, queue age, saga latency for5min at fixed workload. Threshold trigger: readiness unavailable>60s OR eligible errors>5% for2min OR integrity failure any count. Halt and restore previous image digest; do not undo compatible expand migration. Drain new pods; confirm old replica healthy, retry stable operation IDs, inspect unknown provider ops. Reconcile in-flight saga before declaring recovery. Record actual metrics and owner states.
+
+If data corruption or incompatible destructive migration already occurred: stop mutations, preserve logs/volumes, incident lead decides restore+reconcile from isolated backup; simple image rollback cannot fix data. Never auto replay charge with new key. Release checklist: tests/contract/scan evidence, migration compatibility, artifact digest, deploy scope, smoke, observation, rollback ready, docs updated. Notification-only release must leave six business service digests identical F19.

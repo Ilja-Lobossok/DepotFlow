@@ -1,0 +1,62 @@
+{
+  "title": "CI-CD & IaC roadmap",
+  "kind": "Roadmap",
+  "width": 1250,
+  "height": 700,
+  "nodes": [
+    [
+      "M01",
+      "M01 • Git/reproducibility",
+      "Lab foundations|Proof in assignment",
+      40,
+      125,
+      350,
+      95
+    ],
+    [
+      "M13",
+      "M13 • Check DAG",
+      "Contracts, migrations & CI|Proof in assignment",
+      440,
+      125,
+      350,
+      95
+    ],
+    [
+      "M16",
+      "M16 • Per-service release",
+      "Independent delivery & rollback|Proof in assignment",
+      840,
+      125,
+      350,
+      95
+    ],
+    [
+      "M17",
+      "M17 • State/drift/convergenc",
+      "IaC, backup & restore|Proof in assignment",
+      40,
+      365,
+      350,
+      95
+    ]
+  ],
+  "edges": [
+    [
+      "M01",
+      "M13",
+      "next checkpoint"
+    ],
+    [
+      "M13",
+      "M16",
+      "next checkpoint"
+    ],
+    [
+      "M16",
+      "M17",
+      "next checkpoint"
+    ]
+  ],
+  "groups": []
+}

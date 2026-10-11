@@ -1,0 +1,28 @@
+{
+  "owner": "billing",
+  "tables": {
+    "payment_intents": "id, org_id, booking_id, customer_id, authorized_minor, captured_minor, refunded_minor, pending_refund_minor, status, provider_key, version",
+    "payment_operations": "id, org_id, intent_id, kind, amount_minor, provider_key, status, attempt, version",
+    "provider_events": "id, provider_event_id, intent_id, signature_valid, received_at",
+    "ledger_entries": "id, org_id, intent_id, operation_id, kind, amount_minor, created_at"
+  },
+  "relations": [
+    [
+      "payment_intents",
+      "payment_operations",
+      "1 : many intent_id"
+    ],
+    [
+      "payment_intents",
+      "provider_events",
+      "1 : many intent_id"
+    ],
+    [
+      "payment_intents",
+      "ledger_entries",
+      "1 : many intent_id"
+    ]
+  ],
+  "width": 1320,
+  "height": 790
+}

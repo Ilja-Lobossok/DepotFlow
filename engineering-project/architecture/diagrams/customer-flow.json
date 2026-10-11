@@ -1,0 +1,104 @@
+{
+  "title": "Customer journey",
+  "kind": "User flow",
+  "width": 1240,
+  "height": 640,
+  "nodes": [
+    [
+      "0",
+      "Catalog",
+      "Concrete screen / state",
+      40,
+      130,
+      240,
+      90
+    ],
+    [
+      "1",
+      "Availability",
+      "Concrete screen / state",
+      335,
+      130,
+      240,
+      90
+    ],
+    [
+      "2",
+      "Quote",
+      "Concrete screen / state",
+      630,
+      130,
+      240,
+      90
+    ],
+    [
+      "3",
+      "Checkout",
+      "Concrete screen / state",
+      925,
+      130,
+      240,
+      90
+    ],
+    [
+      "4",
+      "Pending",
+      "Concrete screen / state",
+      40,
+      380,
+      240,
+      90
+    ],
+    [
+      "5",
+      "Booking / cancel",
+      "Concrete screen / state",
+      335,
+      380,
+      240,
+      90
+    ],
+    [
+      "6",
+      "Settlement",
+      "Concrete screen / state",
+      630,
+      380,
+      240,
+      90
+    ]
+  ],
+  "edges": [
+    [
+      "0",
+      "1",
+      "next"
+    ],
+    [
+      "1",
+      "2",
+      "next"
+    ],
+    [
+      "2",
+      "3",
+      "next"
+    ],
+    [
+      "3",
+      "4",
+      "next"
+    ],
+    [
+      "4",
+      "5",
+      "next"
+    ],
+    [
+      "5",
+      "6",
+      "next"
+    ]
+  ],
+  "groups": []
+}

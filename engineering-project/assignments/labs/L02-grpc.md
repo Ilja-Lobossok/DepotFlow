@@ -1,0 +1,9 @@
+# L02 — REST vs gRPC availability transport
+
+Context: optional comparative lab after M04, depth recommended during M14. Learn generated contract, HTTP/2, protobuf field compatibility, deadlines and status mapping. Core remains REST unless a measured ADR changes it.
+
+Define protobuf query(model_id,depot_id,start_at,end_at,qty) and response(quantity_available,authoritative_at,guaranteed=false); no business logic solution supplied. Wrapper calls the same Inventory application handler, not a second allocation authority. Implement REST and gRPC clients on identical fixture, TLS locally with trusted lab certificate, propagated deadline. 1000serial and100concurrent read calls, record p50/p95/resources/payload with same network. Compare serialization+transport cost separately from SQL; do not claim gRPC fixes DB latency.
+
+Evolution: add optional field and run old client; reserve deleted field numbers/names and demonstrate why number reuse changes meaning. Invalid interval maps semantic error, timeout DEADLINE_EXCEEDED, permission PERMISSION_DENIED, missing foreign object NOT_FOUND. Block tenant spoofing and expose no private DB. Retry only idempotent query within overall budget; cancellation stops pending client work, not necessarily already completed DB transaction.
+
+Deliverables: .proto, generated code build reproducibility, two client fixtures, TLS/deadline/negative tests, measurement raw data, ADR keep/change. Acceptance: REST/gRPC return identical results for100fixture queries incl invalid/foreign cases; old client reads additive field update; strict deadline test cancels and frees worker; no schema-number reuse. Review: explain protobuf encoding vs domain invariants and why repeated read differs from reserve command. Done after all tests and explicit limitations. No requirement to ship this in main platform.

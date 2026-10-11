@@ -1,0 +1,90 @@
+{
+  "title": "Failure/recovery — ambiguous PSP authorization",
+  "kind": "Failure",
+  "width": 1240,
+  "height": 640,
+  "nodes": [
+    [
+      "timeout",
+      "PSP response lost",
+      "Provider may already have charged",
+      35,
+      135,
+      285,
+      90
+    ],
+    [
+      "unknown",
+      "Billing UNKNOWN",
+      "Persist operation / stable key",
+      420,
+      135,
+      300,
+      90
+    ],
+    [
+      "lookup",
+      "Provider lookup",
+      "Same key; never new authorization",
+      855,
+      135,
+      300,
+      90
+    ],
+    [
+      "active",
+      "Hold still active?",
+      "Inventory clock is authoritative",
+      420,
+      390,
+      300,
+      90
+    ],
+    [
+      "resolve",
+      "Outcome",
+      "Commit if active / void if expired",
+      855,
+      390,
+      300,
+      90
+    ],
+    [
+      "manual",
+      "Manual review",
+      "No fabricated success on timeout",
+      35,
+      390,
+      285,
+      90
+    ]
+  ],
+  "edges": [
+    [
+      "timeout",
+      "unknown",
+      "transport fault"
+    ],
+    [
+      "unknown",
+      "lookup",
+      "reconcile"
+    ],
+    [
+      "lookup",
+      "active",
+      "authorized"
+    ],
+    [
+      "active",
+      "resolve",
+      "yes/no"
+    ],
+    [
+      "lookup",
+      "manual",
+      "irreconcilable"
+    ]
+  ],
+  "groups": []
+}

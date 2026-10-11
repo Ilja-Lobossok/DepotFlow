@@ -1,0 +1,172 @@
+[
+  {
+    "track": "Backend",
+    "name": "Java21 + Spring Boot",
+    "problem": "Типизированные domain rules, transactions/security",
+    "alternatives": "Node/Nest, .NET, Go",
+    "limits": "JVM memory and library compatibility; pin Boot4.1 patch",
+    "learn": "HTTP lifecycle, DI, JDBC transaction boundary",
+    "deliver": "M03 quote API and unit/integration suite",
+    "prove": "Explain rollback when exception is swallowed"
+  },
+  {
+    "track": "Backend",
+    "name": "REST / OpenAPI",
+    "problem": "Явные HTTP contracts",
+    "alternatives": "gRPC/protobuf lab",
+    "limits": "No streaming optimization; breaking semantics need version",
+    "learn": "status codes, caching, deadlines, idempotency",
+    "deliver": "M06 generated fixtures/provider checks",
+    "prove": "Explain why POST timeout does not mean failure"
+  },
+  {
+    "track": "Frontend",
+    "name": "React / TypeScript",
+    "problem": "Accessible role-based UI and server-state handling",
+    "alternatives": "Vue/Svelte",
+    "limits": "UI types do not validate network at runtime",
+    "learn": "router, TanStack Query, forms, runtime validation",
+    "deliver": "M11 checkout and operator E2E",
+    "prove": "Distinguish UI optimistic cache from booking authority"
+  },
+  {
+    "track": "Databases",
+    "name": "PostgreSQL / Flyway",
+    "problem": "Owned durable aggregates and interval integrity",
+    "alternatives": "MySQL; ORM; Liquibase",
+    "limits": "Physical instance shared dev still has one failure domain",
+    "learn": "SQL, MVCC, locks, exclusion, plans, migration",
+    "deliver": "M04 contention and query evidence",
+    "prove": "Explain write skew and why Redis lock is insufficient"
+  },
+  {
+    "track": "Caching",
+    "name": "Redis",
+    "problem": "Bounded catalog cache and gateway throttling",
+    "alternatives": "in-process, HTTP ETag; no cache",
+    "limits": "Eviction and stale data; never inventory truth",
+    "learn": "TTL, memory max, noeviction vs allkeys-lru, persistence",
+    "deliver": "M11 cache outage/rebuild lab",
+    "prove": "Prove stale cache cannot change quote price"
+  },
+  {
+    "track": "Messaging",
+    "name": "RabbitMQ",
+    "problem": "Durable routed commands/events, DLQ",
+    "alternatives": "Kafka lab; Redis Streams; BullMQ",
+    "limits": "Queue topology and confirms need explicit ops",
+    "learn": "acks, confirms, routing, prefetch, quorum",
+    "deliver": "M06 outbox/inbox crash replay",
+    "prove": "Explain confirm success without consumer business effect"
+  },
+  {
+    "track": "Messaging",
+    "name": "Kafka comparative lab",
+    "problem": "Replayable depot utilization projection",
+    "alternatives": "RabbitMQ append-only event archive",
+    "limits": "Not installed core; partitions and rebalance costs",
+    "learn": "offsets, key ordering, retention, group rebalances",
+    "deliver": "M14 comparative failure report",
+    "prove": "Explain ordering per key vs global ordering"
+  },
+  {
+    "track": "Security",
+    "name": "Keycloak / OIDC",
+    "problem": "Authentication without home-made password flow",
+    "alternatives": "managed IdP; session BFF",
+    "limits": "IdP availability and token revocation semantics",
+    "learn": "PKCE, JWKS rotation, JWT audience, RBAC",
+    "deliver": "M02 two tenants and revoke role",
+    "prove": "Explain authentication vs membership authorization"
+  },
+  {
+    "track": "Linux",
+    "name": "Linux / DNS / TLS / Nginx",
+    "problem": "Runtime process/network and edge routing",
+    "alternatives": "Caddy, Traefik",
+    "limits": "Need operational skills, not host security changes here",
+    "learn": "users, signals, sockets, DNS, certificates",
+    "deliver": "M01 lab and M15 network packet evidence",
+    "prove": "Explain DNS failure vs HTTP503 vs connection refused"
+  },
+  {
+    "track": "Containers",
+    "name": "Docker / Compose",
+    "problem": "Repeatable local dependencies and images",
+    "alternatives": "Podman",
+    "limits": "Volumes consume disk; Compose not HA",
+    "learn": "layers, nonroot, networks, bind/volume, health",
+    "deliver": "M01 immutable image and clean environment",
+    "prove": "Explain restart vs recreation vs lost volume"
+  },
+  {
+    "track": "Containers",
+    "name": "Kubernetes / Helm",
+    "problem": "Independent deployments, probes and rollback",
+    "alternatives": "Compose on VM; Nomad",
+    "limits": "Cluster overhead; DB HA not supplied by StatefulSet",
+    "learn": "requests/limits, services, rollout, policies, storage",
+    "deliver": "M15 kind/k3d deployment report",
+    "prove": "Explain readiness vs liveness with broker down"
+  },
+  {
+    "track": "Delivery",
+    "name": "GitHub Actions",
+    "problem": "Repeatable changed-service checks and deploy",
+    "alternatives": "GitLab CI; Jenkins lab",
+    "limits": "Remote runner costs/permissions, local fallback scripts",
+    "learn": "DAG, caches, artifacts, OIDC, environment gates",
+    "deliver": "M16 service-specific release and rollback",
+    "prove": "Explain why path filter can miss shared contract changes"
+  },
+  {
+    "track": "IaC",
+    "name": "OpenTofu / Ansible",
+    "problem": "Cloud resource state + repeatable VM configuration",
+    "alternatives": "Terraform; cloud-native IaC",
+    "limits": "State secrets/lock, billing; Ansible not resource graph",
+    "learn": "plan/state/drift; idempotent playbooks",
+    "deliver": "M17 sandbox plan and local VM convergence",
+    "prove": "Explain IaC state vs actual resources and second run"
+  },
+  {
+    "track": "Cloud",
+    "name": "AWS optional sandbox",
+    "problem": "VPC/IAM/storage and cost reasoning",
+    "alternatives": "Azure/GCP; mandatory local equivalent",
+    "limits": "Real account optional and spending approval required",
+    "learn": "subnets, IAM, budgets, destroy, quotas",
+    "deliver": "M17 local simulation or authorized sandbox report",
+    "prove": "Explain single VM production-like single failure point"
+  },
+  {
+    "track": "Observability",
+    "name": "OpenTelemetry / Prometheus / Grafana / Loki / Tempo",
+    "problem": "Trace slow saga with metrics and logs",
+    "alternatives": "Jaeger, ELK",
+    "limits": "Storage/label cardinality cost; sampling changes visibility",
+    "learn": "trace context, histograms, exemplars, alerts",
+    "deliver": "M12 diagnose poisoned event with correlation",
+    "prove": "Find trace across async edge without logging JWT"
+  },
+  {
+    "track": "Testing",
+    "name": "JUnit / Testcontainers / Playwright / k6 / ZAP",
+    "problem": "Verify real transactions, UI, load and access attacks",
+    "alternatives": "Vitest, Gatling, Locust",
+    "limits": "Tests consume resources; synthetic fixture only",
+    "learn": "test levels, fault injection, percentiles, attack scope",
+    "deliver": "M14 reproducible failure/performance evidence",
+    "prove": "Explain why 100% line coverage does not prove invariants"
+  },
+  {
+    "track": "System Design",
+    "name": "ADRs / threat model / contract review",
+    "problem": "Document costs and reversible decisions",
+    "alternatives": "design review notes",
+    "limits": "Documentation must track actual change",
+    "learn": "ownership, consistency, recovery, architecture audit",
+    "deliver": "M18 defend failure decisions",
+    "prove": "Explain where strong consistency ends and manual review begins"
+  }
+]

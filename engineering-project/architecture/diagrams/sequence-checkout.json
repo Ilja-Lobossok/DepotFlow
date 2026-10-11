@@ -1,0 +1,67 @@
+{
+  "actors": [
+    "Client",
+    "Catalog",
+    "Booking",
+    "Inventory",
+    "Billing"
+  ],
+  "messages": [
+    [
+      "Client",
+      "Catalog",
+      "POST quote → immutable snapshot",
+      "sync"
+    ],
+    [
+      "Client",
+      "Booking",
+      "POST booking + key →202",
+      "sync"
+    ],
+    [
+      "Booking",
+      "Inventory",
+      "reserve-requested via outbox",
+      "async"
+    ],
+    [
+      "Inventory",
+      "Booking",
+      "hold.created (expires_at)",
+      "async"
+    ],
+    [
+      "Booking",
+      "Billing",
+      "authorize-requested (stable key)",
+      "async"
+    ],
+    [
+      "Billing",
+      "Booking",
+      "payment.authorized",
+      "async"
+    ],
+    [
+      "Booking",
+      "Inventory",
+      "commit-requested",
+      "async"
+    ],
+    [
+      "Inventory",
+      "Booking",
+      "allocation.committed",
+      "async"
+    ],
+    [
+      "Booking",
+      "Client",
+      "GET status CONFIRMED",
+      "sync"
+    ]
+  ],
+  "width": 1060,
+  "height": 708
+}
